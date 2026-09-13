@@ -21,5 +21,15 @@ namespace CapaVista_Reporteador
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReporteadorBtnModificarReporte_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
