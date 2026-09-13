@@ -117,49 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        SUVORK5CYII=
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_limpiarReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_limpiarReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_verReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_verReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Footer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_aplicarFiltro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_aplicarFiltro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_circulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Banner_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banner_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_imprimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_imprimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_rutaReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_rutaReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
