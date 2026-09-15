@@ -50,6 +50,7 @@
             this.ReporteadorPnlFiltroBuscarReporte = new System.Windows.Forms.Panel();
             this.btnRuta1 = new CapaVista_BtnRuta.BtnRuta();
             this.btnGuardar1 = new CapaVista_BtnGuardar.BtnGuardar();
+            this.btnLimpiar1 = new CapaVista_BtnLimpiar.BtnLimpiar();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteadorPbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteadorPbFooter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteadorPbBanner)).BeginInit();
@@ -253,12 +254,20 @@
             this.btnGuardar1.Size = new System.Drawing.Size(56, 56);
             this.btnGuardar1.TabIndex = 15;
             // 
+            // btnLimpiar1
+            // 
+            this.btnLimpiar1.Location = new System.Drawing.Point(150, 227);
+            this.btnLimpiar1.Name = "btnLimpiar1";
+            this.btnLimpiar1.Size = new System.Drawing.Size(56, 56);
+            this.btnLimpiar1.TabIndex = 16;
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(230)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(874, 661);
+            this.Controls.Add(this.btnLimpiar1);
             this.Controls.Add(this.btnGuardar1);
             this.Controls.Add(this.btnRuta1);
             this.Controls.Add(this.ReporteadorDtpFechaReporte);
@@ -309,5 +318,6 @@
         private System.Windows.Forms.Panel ReporteadorPnlFiltroBuscarReporte;
         private CapaVista_BtnRuta.BtnRuta btnRuta1;
         private CapaVista_BtnGuardar.BtnGuardar btnGuardar1;
+        private CapaVista_BtnLimpiar.BtnLimpiar btnLimpiar1;
     }
 }
