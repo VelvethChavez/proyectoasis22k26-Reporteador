@@ -13,6 +13,7 @@ namespace CapaVista_BtnLimpiar
 {
     public partial class BtnLimpiar : UserControl
     {
+
         private readonly ClsModeloBtnLimpiar controlador;
 
         public BtnLimpiar()
