@@ -73,6 +73,16 @@ namespace CapaVista_Reporteador.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_ayuda {
+            get {
+                object obj = ResourceManager.GetObject("btn_ayuda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Footer_reporteador {
             get {
                 object obj = ResourceManager.GetObject("Footer_reporteador", resourceCulture);

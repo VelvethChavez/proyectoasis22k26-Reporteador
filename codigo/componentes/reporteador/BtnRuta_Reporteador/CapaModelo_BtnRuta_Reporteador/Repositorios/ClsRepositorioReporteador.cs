@@ -11,7 +11,7 @@ namespace CapaModelo_BtnRuta_Reporteador.Repositorios
         protected ClsRepositorioReporteador()
         {
             _CadenaConexion =
-                "Dsn=dbreporteador";
+                "Dsn=EmbutidosS.A";
         }
 
         // Crea la conexión ODBC para las operaciones

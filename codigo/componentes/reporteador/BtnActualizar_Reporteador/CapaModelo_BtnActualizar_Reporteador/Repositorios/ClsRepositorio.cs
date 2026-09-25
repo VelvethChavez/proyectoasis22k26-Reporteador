@@ -8,7 +8,7 @@ namespace CapaModelo_BtnActualizar.Repositorios
 
         protected ClsRepositorio()
         {
-            _CadenaConexion = "Dsn=dbReporteador";
+            _CadenaConexion = "Dsn=EmbutidosS.A";
         }
 
         protected OdbcConnection ReporteadorMetObtenerConexion()

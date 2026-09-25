@@ -941,5 +941,10 @@ namespace CapaVista_Reporteador
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
         }
+
+        private void ReporteadorBtnAyuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/Reporteador/proyectoasis22k26-Reporteador/ayuda/componentes/reporteador/AyudaReporteador.chm", "Ayuda_General_Reporteador.htm");
+        }
     }
 }
