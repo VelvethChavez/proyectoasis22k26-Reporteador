@@ -45,9 +45,6 @@
             this.ReporteadorChkFechaReporte = new System.Windows.Forms.CheckBox();
             this.ReporteadorTxtNombreReporte2 = new System.Windows.Forms.TextBox();
             this.ReporteadorDtpFechaReporte = new System.Windows.Forms.DateTimePicker();
-            this.ReporteadorPbLogo = new System.Windows.Forms.PictureBox();
-            this.ReporteadorPbFooter = new System.Windows.Forms.PictureBox();
-            this.ReporteadorPbBanner = new System.Windows.Forms.PictureBox();
             this.ReporteadorBtnActualizar = new CapaVista_BtnActualizar.ReporteadorUcActualizar();
             this.ReporteadorBtnBusqueda = new CapaVista_BtnBusqueda.ReporteadorUcBusqueda();
             this.ReporteadorBtnEditar = new CapaVista_BtnEditar_Reporteador.ReporteadorUcEditar();
@@ -56,6 +53,10 @@
             this.ReporteadorBtnGuardar = new CapaVista_BtnGuardar_Reporteador.ReporteadorUcGuardar();
             this.ReporteadorBtnRuta = new CapaVista_BtnRuta_Reporteador.ReporteadorUcRutaReporte();
             this.ReporteadorBtnImprimir = new CapaVista_BtnImprimir_Reporteador.ReporteadorUsrImprimir();
+            this.ReporteadorBtnAyuda = new System.Windows.Forms.Button();
+            this.ReporteadorPbLogo = new System.Windows.Forms.PictureBox();
+            this.ReporteadorPbFooter = new System.Windows.Forms.PictureBox();
+            this.ReporteadorPbBanner = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteadorDgvReportes)).BeginInit();
             this.ReporteadorPnlFiltroBuscarReporte.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteadorPbLogo)).BeginInit();
@@ -223,37 +224,6 @@
             this.ReporteadorDtpFechaReporte.Size = new System.Drawing.Size(162, 31);
             this.ReporteadorDtpFechaReporte.TabIndex = 12;
             // 
-            // ReporteadorPbLogo
-            // 
-            this.ReporteadorPbLogo.Image = global::CapaVista_Reporteador.Properties.Resources.img_mascota;
-            this.ReporteadorPbLogo.Location = new System.Drawing.Point(667, 259);
-            this.ReporteadorPbLogo.Name = "ReporteadorPbLogo";
-            this.ReporteadorPbLogo.Size = new System.Drawing.Size(195, 210);
-            this.ReporteadorPbLogo.TabIndex = 2;
-            this.ReporteadorPbLogo.TabStop = false;
-            // 
-            // ReporteadorPbFooter
-            // 
-            this.ReporteadorPbFooter.Image = global::CapaVista_Reporteador.Properties.Resources.Footer_reporteador;
-            this.ReporteadorPbFooter.Location = new System.Drawing.Point(-6, 583);
-            this.ReporteadorPbFooter.MaximumSize = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbFooter.MinimumSize = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbFooter.Name = "ReporteadorPbFooter";
-            this.ReporteadorPbFooter.Size = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbFooter.TabIndex = 1;
-            this.ReporteadorPbFooter.TabStop = false;
-            // 
-            // ReporteadorPbBanner
-            // 
-            this.ReporteadorPbBanner.Image = global::CapaVista_Reporteador.Properties.Resources.banner_Reporteador;
-            this.ReporteadorPbBanner.Location = new System.Drawing.Point(-6, -3);
-            this.ReporteadorPbBanner.MaximumSize = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbBanner.MinimumSize = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbBanner.Name = "ReporteadorPbBanner";
-            this.ReporteadorPbBanner.Size = new System.Drawing.Size(890, 110);
-            this.ReporteadorPbBanner.TabIndex = 0;
-            this.ReporteadorPbBanner.TabStop = false;
-            // 
             // ReporteadorBtnActualizar
             // 
             this.ReporteadorBtnActualizar.BackColor = System.Drawing.Color.Transparent;
@@ -320,7 +290,7 @@
             // 
             this.ReporteadorBtnRuta.BackColor = System.Drawing.Color.Transparent;
             this.ReporteadorBtnRuta.CampoTextoRuta = null;
-            this.ReporteadorBtnRuta.Location = new System.Drawing.Point(705, 99);
+            this.ReporteadorBtnRuta.Location = new System.Drawing.Point(705, 113);
             this.ReporteadorBtnRuta.Name = "ReporteadorBtnRuta";
             this.ReporteadorBtnRuta.Size = new System.Drawing.Size(56, 56);
             this.ReporteadorBtnRuta.TabIndex = 24;
@@ -334,12 +304,58 @@
             this.ReporteadorBtnImprimir.Size = new System.Drawing.Size(56, 56);
             this.ReporteadorBtnImprimir.TabIndex = 25;
             // 
+            // ReporteadorBtnAyuda
+            // 
+            this.ReporteadorBtnAyuda.BackColor = System.Drawing.Color.Transparent;
+            this.ReporteadorBtnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReporteadorBtnAyuda.FlatAppearance.BorderSize = 0;
+            this.ReporteadorBtnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReporteadorBtnAyuda.Image = global::CapaVista_Reporteador.Properties.Resources.btn_ayuda;
+            this.ReporteadorBtnAyuda.Location = new System.Drawing.Point(795, 12);
+            this.ReporteadorBtnAyuda.Name = "ReporteadorBtnAyuda";
+            this.ReporteadorBtnAyuda.Size = new System.Drawing.Size(56, 56);
+            this.ReporteadorBtnAyuda.TabIndex = 26;
+            this.ReporteadorBtnAyuda.UseVisualStyleBackColor = false;
+            this.ReporteadorBtnAyuda.Click += new System.EventHandler(this.ReporteadorBtnAyuda_Click);
+            // 
+            // ReporteadorPbLogo
+            // 
+            this.ReporteadorPbLogo.Image = global::CapaVista_Reporteador.Properties.Resources.img_mascota;
+            this.ReporteadorPbLogo.Location = new System.Drawing.Point(667, 259);
+            this.ReporteadorPbLogo.Name = "ReporteadorPbLogo";
+            this.ReporteadorPbLogo.Size = new System.Drawing.Size(195, 210);
+            this.ReporteadorPbLogo.TabIndex = 2;
+            this.ReporteadorPbLogo.TabStop = false;
+            // 
+            // ReporteadorPbFooter
+            // 
+            this.ReporteadorPbFooter.Image = global::CapaVista_Reporteador.Properties.Resources.Footer_reporteador;
+            this.ReporteadorPbFooter.Location = new System.Drawing.Point(-6, 576);
+            this.ReporteadorPbFooter.MaximumSize = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbFooter.MinimumSize = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbFooter.Name = "ReporteadorPbFooter";
+            this.ReporteadorPbFooter.Size = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbFooter.TabIndex = 1;
+            this.ReporteadorPbFooter.TabStop = false;
+            // 
+            // ReporteadorPbBanner
+            // 
+            this.ReporteadorPbBanner.Image = global::CapaVista_Reporteador.Properties.Resources.banner_Reporteador;
+            this.ReporteadorPbBanner.Location = new System.Drawing.Point(-6, -3);
+            this.ReporteadorPbBanner.MaximumSize = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbBanner.MinimumSize = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbBanner.Name = "ReporteadorPbBanner";
+            this.ReporteadorPbBanner.Size = new System.Drawing.Size(890, 110);
+            this.ReporteadorPbBanner.TabIndex = 0;
+            this.ReporteadorPbBanner.TabStop = false;
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(230)))), ((int)(((byte)(214)))));
-            this.ClientSize = new System.Drawing.Size(874, 609);
+            this.ClientSize = new System.Drawing.Size(874, 676);
+            this.Controls.Add(this.ReporteadorBtnAyuda);
             this.Controls.Add(this.ReporteadorBtnImprimir);
             this.Controls.Add(this.ReporteadorBtnRuta);
             this.Controls.Add(this.ReporteadorBtnGuardar);
@@ -362,7 +378,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(890, 748);
-            this.MinimumSize = new System.Drawing.Size(890, 591);
+            this.MinimumSize = new System.Drawing.Size(890, 700);
             this.Name = "FrmReportes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3001 - ListaReportes";
@@ -401,5 +417,6 @@
         private CapaVista_BtnGuardar_Reporteador.ReporteadorUcGuardar ReporteadorBtnGuardar;
         private CapaVista_BtnRuta_Reporteador.ReporteadorUcRutaReporte ReporteadorBtnRuta;
         private CapaVista_BtnImprimir_Reporteador.ReporteadorUsrImprimir ReporteadorBtnImprimir;
+        private System.Windows.Forms.Button ReporteadorBtnAyuda;
     }
 }

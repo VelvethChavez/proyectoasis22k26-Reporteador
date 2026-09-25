@@ -9,7 +9,7 @@ namespace CapaModelo_BtnGuardar_Reporteador.Repositorios
         protected ClsRepositorioReporteador()
         {
             _CadenaConexion =
-                "Dsn=dbreporteador";
+                "Dsn=EmbutidosS.A";
         }
 
         protected OdbcConnection ReporteadorMetObtenerConexion()

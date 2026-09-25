@@ -9,7 +9,7 @@ namespace CapaModelo_BtnBusqueda.Repositorios
         protected ClsRepositorio()
         {
             _CadenaConexion =
-                "Dsn=dbreporteador";
+                "Dsn=EmbutidosS.A";
         }
 
         protected OdbcConnection
