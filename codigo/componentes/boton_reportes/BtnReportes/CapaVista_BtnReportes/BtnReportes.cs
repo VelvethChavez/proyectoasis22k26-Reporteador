@@ -84,11 +84,17 @@ namespace CapaVista_BtnReportes
                 {
                     ClsEventoSolicitarDatos Args = new ClsEventoSolicitarDatos
                     {
-                        Datos = Datos
+                        Datos = Datos,
+                        RutaReporte = RutaReporte,
+                        NombreDataSource = NombreDataSource,
+                        Titulo = TituloReporte
                     };
 
                     SolicitarDatos(this, Args);
 
+                    Solicitud.RutaReporte = Args.RutaReporte;
+                    Solicitud.NombreDataSource = Args.NombreDataSource;
+                    Solicitud.Titulo = Args.Titulo;
                     Solicitud.Datos = Args.Datos;
                     Solicitud.Parametros = Args.Parametros;
                 }
