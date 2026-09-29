@@ -87,6 +87,12 @@
       <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <!-- El ReportViewer carga Microsoft.SqlServer.Types en ejecución; sin esta DLL junto al .exe el visor
+         muestra "no se puede mostrar el reporte". -->
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <!-- Inicio cambio - Mario Alberto Taracena Pérez - 0901-23-9335 -->
     <!-- Componente Seguridad: necesario para la sesión de Seguridad y para
          que sus dependencias (BCrypt.Net-Next, MailKit, etc.) terminen en la carpeta de salida. -->

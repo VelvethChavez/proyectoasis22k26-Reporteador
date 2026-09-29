@@ -26,3 +26,7 @@ USAR EN TU PROYECTO:
 
   El ReportViewer (Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1652.0) viaja
   junto a las DLL en la carpeta dist.
+
+IMPORTANTE: el proyecto que use el boton debe tener junto a su .exe TODAS las DLL de dist, en especial
+Microsoft.SqlServer.Types.dll (el ReportViewer la carga al ejecutar). Si falta, el visor dice
+'no se puede mostrar el reporte'. Si Visual Studio no la copia sola, agregala como referencia (Copiar local = True).
