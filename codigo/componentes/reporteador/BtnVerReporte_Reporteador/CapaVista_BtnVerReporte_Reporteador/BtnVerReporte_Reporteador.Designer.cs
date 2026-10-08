@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_BtnVerReporte_Reporteador
 {
-    partial class BtnVerReporte_Reporteador
+    partial class ReporteadorUcVerReporte
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -48,13 +48,13 @@
             this.ReporteadorBtnVerReporte.TabIndex = 0;
             this.ReporteadorBtnVerReporte.UseVisualStyleBackColor = false;
             // 
-            // BtnVerReporte_Reporteador
+            // ReporteadorUcVerReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(230)))), ((int)(((byte)(214)))));
             this.Controls.Add(this.ReporteadorBtnVerReporte);
-            this.Name = "BtnVerReporte_Reporteador";
+            this.Name = "ReporteadorUcVerReporte";
             this.Size = new System.Drawing.Size(56, 56);
             this.ResumeLayout(false);
 

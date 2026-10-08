@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.Odbc;
 
-namespace CapaModelo_BtnBusqueda.Repositorios
+namespace CapaModelo_BtnBusqueda_Reporteador.Repositorios
 {
     public class ClsRepositorioBtnBusqueda
         : ClsRepositorio

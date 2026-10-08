@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.Odbc;
 
-namespace CapaModelo_BtnActualizar.Repositorios
+namespace CapaModelo_BtnActualizar_Reporteador.Repositorios
 {
     public class ClsRepositorioBtnActualizar
         : ClsRepositorio

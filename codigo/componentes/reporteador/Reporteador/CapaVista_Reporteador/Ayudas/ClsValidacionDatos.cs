@@ -10,31 +10,19 @@ namespace CapaVista_Reporteador.Ayudas
     /// </summary>
     public class ClsValidacionDatos
     {
-        private readonly ValidationContext
-            _Contexto;
+        private readonly ValidationContext _Contexto;
 
-        private readonly List<ValidationResult>
-            _Resultados;
+        private readonly List<ValidationResult> _Resultados;
 
-        private readonly bool
-            _Valido;
+        private readonly bool _Valido;
 
-        public ClsValidacionDatos(
-            object Instancia)
+        public ClsValidacionDatos(object Instancia)
         {
-            _Contexto =
-                new ValidationContext(
-                    Instancia);
+            _Contexto = new ValidationContext(Instancia);
 
-            _Resultados =
-                new List<ValidationResult>();
+            _Resultados = new List<ValidationResult>();
 
-            _Valido =
-                Validator.TryValidateObject(
-                    Instancia,
-                    _Contexto,
-                    _Resultados,
-                    true);
+            _Valido = Validator.TryValidateObject(Instancia, _Contexto, _Resultados, true);
         }
 
         /// <summary>
@@ -45,23 +33,19 @@ namespace CapaVista_Reporteador.Ayudas
         {
             if (!_Valido)
             {
-                string Mensaje =
-                    string.Empty;
+                string Mensaje = string.Empty;
 
-                foreach (
-                    ValidationResult Resultado
-                    in _Resultados)
+                foreach (ValidationResult Resultado in _Resultados)
                 {
-                    Mensaje +=
-                        Resultado.ErrorMessage
-                        + "\n";
+                    Mensaje += Resultado.ErrorMessage + "\n";
                 }
 
                 MessageBox.Show(
                     Mensaje,
                     "Validación",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
+                    MessageBoxIcon.Warning
+                );
             }
 
             return _Valido;

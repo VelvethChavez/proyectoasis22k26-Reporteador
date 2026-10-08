@@ -5,11 +5,11 @@ using CapaControlador_BtnVerReporte_Reporteador;
 
 namespace CapaVista_BtnVerReporte_Reporteador
 {
-    public partial class BtnVerReporte_Reporteador : UserControl
+    public partial class ReporteadorUcVerReporte : UserControl
     {
         private readonly ClsControladorBtnVerReporte _Controlador;
 
-        public BtnVerReporte_Reporteador()
+        public ReporteadorUcVerReporte()
         {
             InitializeComponent();
             _Controlador = new ClsControladorBtnVerReporte();
@@ -35,8 +35,8 @@ namespace CapaVista_BtnVerReporte_Reporteador
                 return;
             }
 
-            FrmVistaPrevia vistaPrevia = new FrmVistaPrevia(RutaReporte, FuentesDeDatos);
-            vistaPrevia.ShowDialog();
+            FrmVistaPrevia VentanaVistaPrevia = new FrmVistaPrevia(RutaReporte, FuentesDeDatos);
+            VentanaVistaPrevia.ShowDialog();
         }
     }
 }

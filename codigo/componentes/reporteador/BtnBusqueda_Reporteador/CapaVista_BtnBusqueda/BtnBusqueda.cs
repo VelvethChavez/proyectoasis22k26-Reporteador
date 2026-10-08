@@ -6,9 +6,9 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
-using CapaControlador_BtnBusqueda;
+using CapaControlador_BtnBusqueda_Reporteador;
 
-namespace CapaVista_BtnBusqueda
+namespace CapaVista_BtnBusqueda_Reporteador
 {
     public partial class ReporteadorUcBusqueda
         : UserControl

@@ -12,8 +12,7 @@ namespace CapaModelo_Reporteador.Repositorios
         // CADENA DE CONEXIÓN
         // =========================================================
 
-        private readonly string
-            _CadenaConexion;
+        private readonly string _CadenaConexion;
 
         protected ClsRepositorio()
         {
@@ -28,11 +27,9 @@ namespace CapaModelo_Reporteador.Repositorios
         /// Crea una conexión ODBC utilizando el DSN
         /// configurado para Reporteador.
         /// </summary>
-        protected OdbcConnection
-            ReporteadorMetObtenerConexion()
+        protected OdbcConnection ReporteadorMetObtenerConexion()
         {
-            return new OdbcConnection(
-                _CadenaConexion);
+            return new OdbcConnection(_CadenaConexion);
         }
     }
 }

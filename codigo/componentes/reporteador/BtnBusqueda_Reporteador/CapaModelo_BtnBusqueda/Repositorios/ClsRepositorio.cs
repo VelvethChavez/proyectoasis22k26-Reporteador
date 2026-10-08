@@ -1,6 +1,6 @@
 ﻿using System.Data.Odbc;
 
-namespace CapaModelo_BtnBusqueda.Repositorios
+namespace CapaModelo_BtnBusqueda_Reporteador.Repositorios
 {
     public abstract class ClsRepositorio
     {

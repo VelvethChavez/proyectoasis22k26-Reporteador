@@ -13,31 +13,15 @@ namespace CapaModelo_Reporteador.Entidades
         // =========================================================
 
         // Número único del reporte.
-        public int NumeroReporte
-        {
-            get;
-            set;
-        }
+        public int NumeroReporte { get; set; }
 
         // Nombre descriptivo del reporte.
-        public string NombreReporte
-        {
-            get;
-            set;
-        }
+        public string NombreReporte { get; set; }
 
         // Ruta física del archivo PDF.
-        public string RutaReporte
-        {
-            get;
-            set;
-        }
+        public string RutaReporte { get; set; }
 
         // Fecha asociada al reporte.
-        public DateTime FechaReporte
-        {
-            get;
-            set;
-        }
+        public DateTime FechaReporte { get; set; }
     }
 }

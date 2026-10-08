@@ -1,7 +1,7 @@
 ﻿using System.Data;
-using CapaModelo_BtnActualizar.Repositorios;
+using CapaModelo_BtnActualizar_Reporteador.Repositorios;
 
-namespace CapaControlador_BtnActualizar
+namespace CapaControlador_BtnActualizar_Reporteador
 {
     public class ClsControladorBtnActualizar
     {
