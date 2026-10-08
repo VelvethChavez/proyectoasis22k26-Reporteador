@@ -14,7 +14,7 @@ namespace CapaControlador_BtnVerReporte_Reporteador
         // SOLICITAR AL MODELO LA RUTA ASOCIADA AL NUMERO DE REPORTE
         public string ReporteadorMetObtenerRutaReporte(int NumeroReporte)
         {
-            return _Repositorio.ReporteadorMetObtenerRutaReporte(NumeroReporte);
+            return _Repositorio.ReporteadorMetObtenerRutaReporte(NumeroReporte);                        
         }
     }
 }

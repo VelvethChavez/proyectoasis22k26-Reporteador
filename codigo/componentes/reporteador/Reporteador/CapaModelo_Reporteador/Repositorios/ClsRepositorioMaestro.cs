@@ -8,13 +8,10 @@ namespace CapaModelo_Reporteador.Repositorios
     /// Repositorio maestro que proporciona métodos
     /// generales para ejecutar consultas y comandos SQL.
     /// </summary>
-    public abstract class ClsRepositorioMaestro
-        : ClsRepositorio
+    public abstract class ClsRepositorioMaestro : ClsRepositorio
     {
         protected ClsRepositorioMaestro()
-            : base()
-        {
-        }
+            : base() { }
 
         // =========================================================
         // EJECUTAR NON QUERY
@@ -26,36 +23,27 @@ namespace CapaModelo_Reporteador.Repositorios
         protected int ReporteadorMetEjecucionNonQuery(
             string ComandoTexto,
             List<OdbcParameter> Parametros,
-            CommandType ComandoTipo)
+            CommandType ComandoTipo
+        )
         {
-            using (
-                OdbcConnection Conexion =
-                    ReporteadorMetObtenerConexion())
+            using (OdbcConnection Conexion = ReporteadorMetObtenerConexion())
             {
                 Conexion.Open();
 
-                using (
-                    OdbcCommand Comando =
-                        new OdbcCommand())
+                using (OdbcCommand Comando = new OdbcCommand())
                 {
-                    Comando.Connection =
-                        Conexion;
+                    Comando.Connection = Conexion;
 
-                    Comando.CommandText =
-                        ComandoTexto;
+                    Comando.CommandText = ComandoTexto;
 
-                    Comando.CommandType =
-                        ComandoTipo;
+                    Comando.CommandType = ComandoTipo;
 
-                    if (Parametros != null &&
-                        Parametros.Count > 0)
+                    if (Parametros != null && Parametros.Count > 0)
                     {
-                        Comando.Parameters.AddRange(
-                            Parametros.ToArray());
+                        Comando.Parameters.AddRange(Parametros.ToArray());
                     }
 
-                    return
-                        Comando.ExecuteNonQuery();
+                    return Comando.ExecuteNonQuery();
                 }
             }
         }
@@ -68,45 +56,32 @@ namespace CapaModelo_Reporteador.Repositorios
         /// Ejecuta una consulta SELECT y devuelve
         /// los resultados en un DataTable.
         /// </summary>
-        protected DataTable
-            ReporteadorMetEjecucionConsulta(
-                string ComandoTexto,
-                List<OdbcParameter> Parametros = null,
-                CommandType ComandoTipo =
-                    CommandType.Text)
+        protected DataTable ReporteadorMetEjecucionConsulta(
+            string ComandoTexto,
+            List<OdbcParameter> Parametros = null,
+            CommandType ComandoTipo = CommandType.Text
+        )
         {
-            DataTable Tabla =
-                new DataTable();
+            DataTable Tabla = new DataTable();
 
-            using (
-                OdbcConnection Conexion =
-                    ReporteadorMetObtenerConexion())
+            using (OdbcConnection Conexion = ReporteadorMetObtenerConexion())
             {
                 Conexion.Open();
 
-                using (
-                    OdbcCommand Comando =
-                        new OdbcCommand())
+                using (OdbcCommand Comando = new OdbcCommand())
                 {
-                    Comando.Connection =
-                        Conexion;
+                    Comando.Connection = Conexion;
 
-                    Comando.CommandText =
-                        ComandoTexto;
+                    Comando.CommandText = ComandoTexto;
 
-                    Comando.CommandType =
-                        ComandoTipo;
+                    Comando.CommandType = ComandoTipo;
 
-                    if (Parametros != null &&
-                        Parametros.Count > 0)
+                    if (Parametros != null && Parametros.Count > 0)
                     {
-                        Comando.Parameters.AddRange(
-                            Parametros.ToArray());
+                        Comando.Parameters.AddRange(Parametros.ToArray());
                     }
 
-                    using (
-                        OdbcDataReader Lector =
-                            Comando.ExecuteReader())
+                    using (OdbcDataReader Lector = Comando.ExecuteReader())
                     {
                         Tabla.Load(Lector);
                     }

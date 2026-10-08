@@ -6,9 +6,9 @@ using System;
 using System.ComponentModel;
 using System.Data;
 using System.Windows.Forms;
-using CapaControlador_BtnActualizar;
+using CapaControlador_BtnActualizar_Reporteador;
 
-namespace CapaVista_BtnActualizar
+namespace CapaVista_BtnActualizar_Reporteador
 {
     [ToolboxItem(true)]
     [Description(
@@ -27,7 +27,7 @@ namespace CapaVista_BtnActualizar
                 new ClsControladorBtnActualizar();
         }
 
-        private void ReporteadorBtnActualizar_Click(
+        private void ReporteadorMetActualizarClick(
             object Sender,
             EventArgs E)
         {

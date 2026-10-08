@@ -1,38 +1,46 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
+using CapaControlador_Reporteador;
 using Microsoft.Reporting.WinForms;
 
-namespace CapaVista_BtnVerReporte_Reporteador
+namespace CapaVista_Reporteador.Formas
 {
-    public partial class FrmVistaPrevia : Form
+    public partial class FrmVistaReportes : Form
     {
         private readonly string _RutaReporte;
         private readonly Dictionary<string, object> _FuentesDeDatos;
 
-        // RECIBIR LA RUTA Y LAS FUENTES DE DATOS DEL REPORTE
-        public FrmVistaPrevia(string RutaReporte, Dictionary<string, object> FuentesDeDatos)
+        public FrmVistaReportes(string RutaReporte, Dictionary<string, object> FuentesDeDatos)
         {
             InitializeComponent();
             _RutaReporte = RutaReporte;
             _FuentesDeDatos = FuentesDeDatos;
         }
 
+        public FrmVistaReportes(int IdAplicacion, Dictionary<string, object> FuentesDeDatos)
+            : this(
+                new ClsModeloReporteador().ReporteadorMetObtenerRutaPrimerReporte(IdAplicacion),
+                FuentesDeDatos
+            ) { }
+
         private void ReporteadorMetCargarVistaPrevia(object Sender, EventArgs E)
         {
             if (_FuentesDeDatos == null)
             {
-                ReporteadorRpvVistaPrevia.LocalReport.ReportPath = _RutaReporte;
-                ReporteadorRpvVistaPrevia.RefreshReport();
+                ReporteadorRpvVistaReporte.LocalReport.ReportPath = _RutaReporte;
+                ReporteadorRpvVistaReporte.RefreshReport();
                 return;
             }
 
             ReporteadorMetCargarReporteDinamico(_RutaReporte, _FuentesDeDatos);
         }
 
-        // CARGAR EL RDLC Y AGREGAR SOLAMENTE LOS DATASETS QUE NECESITA
-        private void ReporteadorMetCargarReporteDinamico(string RutaRdlc, Dictionary<string, object> FuentesDeDatos)
+        private void ReporteadorMetCargarReporteDinamico(
+            string RutaRdlc,
+            Dictionary<string, object> FuentesDeDatos
+        )
         {
             if (!File.Exists(RutaRdlc))
             {
@@ -40,13 +48,13 @@ namespace CapaVista_BtnVerReporte_Reporteador
                 return;
             }
 
-            ReporteadorRpvVistaPrevia.Reset();
-            ReporteadorRpvVistaPrevia.ProcessingMode = ProcessingMode.Local;
-            ReporteadorRpvVistaPrevia.LocalReport.ReportPath = RutaRdlc;
+            ReporteadorRpvVistaReporte.Reset();
+            ReporteadorRpvVistaReporte.ProcessingMode = ProcessingMode.Local;
+            ReporteadorRpvVistaReporte.LocalReport.ReportPath = RutaRdlc;
 
             // OBTENER LOS NOMBRES DE DATASET QUE PIDE EL ARCHIVO RDLC
             IList<string> DatasetsRequeridos =
-                ReporteadorRpvVistaPrevia.LocalReport.GetDataSourceNames();
+                ReporteadorRpvVistaReporte.LocalReport.GetDataSourceNames();
 
             if (FuentesDeDatos == null)
             {
@@ -61,19 +69,17 @@ namespace CapaVista_BtnVerReporte_Reporteador
 
                     ReportDataSource Fuente = new ReportDataSource(NombreDataset, Datos);
 
-                    ReporteadorRpvVistaPrevia.LocalReport.DataSources.Add(Fuente);
+                    ReporteadorRpvVistaReporte.LocalReport.DataSources.Add(Fuente);
                 }
                 else
                 {
                     MessageBox.Show(
-                        "Advertencia: El reporte requiere el DataSet '"
-                            + NombreDataset
-                            + "', pero no fue provisto."
+                        "Advertencia: El reporte requiere el DataSet '" + NombreDataset + "', pero no fue provisto."
                     );
                 }
             }
 
-            ReporteadorRpvVistaPrevia.RefreshReport();
+            ReporteadorRpvVistaReporte.RefreshReport();
         }
     }
 }

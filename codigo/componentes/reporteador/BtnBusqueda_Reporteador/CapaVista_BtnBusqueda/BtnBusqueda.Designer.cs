@@ -1,4 +1,4 @@
-﻿namespace CapaVista_BtnBusqueda
+﻿namespace CapaVista_BtnBusqueda_Reporteador
 {
     partial class ReporteadorUcBusqueda
     {

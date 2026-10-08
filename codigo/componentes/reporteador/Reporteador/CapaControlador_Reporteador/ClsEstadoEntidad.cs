@@ -17,6 +17,6 @@
 
         // Estado heredado de versiones anteriores.
         // Se conserva para evitar romper referencias existentes.
-        Agregar
+        Agregar,
     }
 }

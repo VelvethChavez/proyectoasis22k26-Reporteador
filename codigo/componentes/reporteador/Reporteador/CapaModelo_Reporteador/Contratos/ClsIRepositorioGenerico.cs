@@ -13,19 +13,15 @@ namespace CapaModelo_Reporteador.Contratos
         where Entity : class
     {
         // Agrega una entidad.
-        int ReporteadorMetAgregar(
-            Entity Entidad);
+        int ReporteadorMetAgregar(Entity Entidad);
 
         // Edita una entidad existente.
-        int ReporteadorMetEditar(
-            Entity Entidad);
+        int ReporteadorMetEditar(Entity Entidad);
 
         // Elimina una entidad.
-        int ReporteadorMetRemover(
-            Entity Entidad);
+        int ReporteadorMetRemover(Entity Entidad);
 
         // Obtiene todas las entidades.
-        IEnumerable<Entity>
-            ReporteadorMetObtenerTodos();
+        IEnumerable<Entity> ReporteadorMetObtenerTodos();
     }
 }

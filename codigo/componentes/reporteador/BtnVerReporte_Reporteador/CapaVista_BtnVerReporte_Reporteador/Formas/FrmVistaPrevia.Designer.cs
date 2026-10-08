@@ -44,7 +44,7 @@ namespace CapaVista_BtnVerReporte_Reporteador
             this.Name = "FrmVistaPrevia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "3002 – VistaPrevia";
-            this.Load += new System.EventHandler(this.FrmVistaPrevia_Load);
+            this.Load += new System.EventHandler(this.ReporteadorMetCargarVistaPrevia);
             this.ResumeLayout(false);
 
         }

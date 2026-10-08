@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Data;
-using CapaModelo_BtnBusqueda.Repositorios;
+using CapaModelo_BtnBusqueda_Reporteador.Repositorios;
 
-namespace CapaControlador_BtnBusqueda
+namespace CapaControlador_BtnBusqueda_Reporteador
 {
     public class ClsModeloBtnBusqueda
     {
@@ -27,28 +27,6 @@ namespace CapaControlador_BtnBusqueda
                     FechaReporte,
                     BuscarPorNombre,
                     BuscarPorFecha);
-        }
-
-        /*
-         * Método de compatibilidad.
-         *
-         * El BtnBusqueda.cs existente utiliza
-         * BuscarReportes().
-         *
-         * No es necesario modificar ese archivo
-         * para que siga funcionando.
-         */
-        public DataTable BuscarReportes(
-            string NombreReporte,
-            DateTime? FechaReporte,
-            bool BuscarPorNombre,
-            bool BuscarPorFecha)
-        {
-            return ReporteadorMetBuscarReportes(
-                NombreReporte,
-                FechaReporte,
-                BuscarPorNombre,
-                BuscarPorFecha);
         }
     }
 }

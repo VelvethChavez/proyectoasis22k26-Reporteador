@@ -1,4 +1,4 @@
-namespace CapaVista_BtnActualizar
+namespace CapaVista_BtnActualizar_Reporteador
 {
     partial class ReporteadorUcActualizar
     {
@@ -34,7 +34,7 @@ namespace CapaVista_BtnActualizar
             this.ReporteadorBtnActualizar.Size = new System.Drawing.Size(56, 56);
             this.ReporteadorBtnActualizar.TabIndex = 0;
             this.ReporteadorBtnActualizar.UseVisualStyleBackColor = false;
-            this.ReporteadorBtnActualizar.Click += new System.EventHandler(this.ReporteadorBtnActualizar_Click);
+            this.ReporteadorBtnActualizar.Click += new System.EventHandler(this.ReporteadorMetActualizarClick);
             // 
             // ReporteadorUcActualizar
             // 
