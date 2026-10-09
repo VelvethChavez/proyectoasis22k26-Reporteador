@@ -649,7 +649,7 @@ namespace CapaVista_Reporteador
         {
             Help.ShowHelp(
                 this,
-                "C:/Reporteador/proyectoasis22k26-Reporteador/ayuda/componentes/reporteador/AyudaReporteador.chm",
+                "C:/proyectoasis22k26-Reporteador/ayuda/componentes/reporteador/AyudaReporteador.chm",
                 "Ayuda_General_Reporteador.html"
             );
         }
@@ -669,29 +669,3 @@ namespace CapaVista_Reporteador
         }
     }
 }
-
-// Codigo a utilizar para cargar reportes desde otra aplicación:
-
-/* NOTA: PARA GUARDAR UN REPORTE SE DEBE AGREGAR UN ID DE APLICACIÓN, PARA PODER CARGAR LOS REPORTES DE ESA APLICACIÓN
- *
- * NOTA:
- * Este metodo es el que tiene la funcionalidad del navegador
- * debe colocarse en el forumalirio donde este el boton de imprimir para hacer la
- * referencia con la capa vista de este CapaVista_Reporteador,
- * y asi poder cargar los reportes de la aplicacion que se desee.
- 
-  private void btnImprimir_Click(object sender, EventArgs e)
-        {
-            int idAplicacion = 1;
-
-            Dictionary<string, object> fuentes = new Dictionary<string, object>();
-
-            fuentes.Add("ReporteTipoSanciones", tipo_sancion.GetAll());
-
-            FrmReportes FormularioReportes = new FrmReportes();
-
-            FormularioReportes.ReporteadorMetCargarReportes(idAplicacion, fuentes);
-
-            FormularioReportes.ShowDialog(this);
-        }
- */
