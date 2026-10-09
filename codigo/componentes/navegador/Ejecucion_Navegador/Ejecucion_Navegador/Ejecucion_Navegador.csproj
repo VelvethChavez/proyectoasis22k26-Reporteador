@@ -65,6 +65,34 @@
     <Reference Include="CapaVista_Navegador">
       <HintPath>..\..\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>
+    <!-- Ejemplo BtnReportes: botón que abre el visor de reportes (compilar antes boton_reportes\BtnReportes).
+         Private=True copia junto al .exe sus dependencias (ReportViewer, capas Modelo/Controlador). -->
+    <Reference Include="CapaVista_BtnReportes">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\CapaVista_BtnReportes\bin\Debug\CapaVista_BtnReportes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!-- El ReportViewer carga Microsoft.SqlServer.Types en ejecución; sin esta DLL junto al .exe el visor
+         muestra "no se puede mostrar el reporte". -->
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\boton_reportes\BtnReportes\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <!-- Inicio cambio - Mario Alberto Taracena Pérez - 0901-23-9335 -->
     <!-- Componente Seguridad: necesario para la sesión de Seguridad y para
          que sus dependencias (BCrypt.Net-Next, MailKit, etc.) terminen en la carpeta de salida. -->
@@ -122,6 +150,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <!-- Ejemplo BtnReportes: los .rdlc de Seguridad se enlazan (no se copian al repo) y quedan en Reportes\ junto al .exe. -->
+  <ItemGroup>
+    <Content Include="$(SeguridadBin)\CapaVista_Seguridad\Reportes\*.rdlc">
+      <Link>Reportes\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
