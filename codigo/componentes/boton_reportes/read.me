@@ -1,0 +1,32 @@
+BOTON REPORTES (control de usuario, MVC en 3 capas)
+====================================================
+Boton igual al de "Imprimir" del Navegador que abre el visor de reportes (RDLC),
+como se hace en Consultas/Seguridad. No modifica el Reporteador.
+
+Capas (BtnReportes\):
+  CapaModelo_BtnReportes      -> ClsSolicitudReporte, ClsRepositorioBtnReportes (localiza y lee el .rdlc)
+  CapaControlador_BtnReportes -> ClsControladorBtnReportes (valida la solicitud)
+  CapaVista_BtnReportes       -> BtnReportes (UserControl) + FrmVisorReportes (ReportViewer)
+
+COMPILAR:  doble clic en build_boton_reportes.bat  -> deja las DLL en la carpeta "dist".
+
+USAR EN TU PROYECTO:
+  1. Referencia -> dist\CapaVista_BtnReportes.dll (las demas DLL se copian solas).
+  2. Cuadro de herramientas -> Elegir elementos -> esa DLL; arrastra "BtnReportes" al formulario.
+  3. Copia tu .rdlc al directorio de salida (Copiar siempre / Copy to Output Directory).
+  4. Propiedades del boton: RutaReporte = "Reportes\MiReporte.rdlc" (NombreDataSource es opcional:
+     si se deja vacio usa el primer DataSet del .rdlc).
+  5. Entrega los datos (lista de objetos o DataTable) en el evento SolicitarDatos:
+
+       private void btnReportes1_SolicitarDatos(object sender, CapaVista_BtnReportes.ClsEventoSolicitarDatos e)
+       {
+           e.Datos = miControlador.GetAll();          // igual que el GetAll del data grid
+           // e.Parametros["Titulo"] = "Empleados";   // opcional
+       }
+
+  El ReportViewer (Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1652.0) viaja
+  junto a las DLL en la carpeta dist.
+
+IMPORTANTE: el proyecto que use el boton debe tener junto a su .exe TODAS las DLL de dist, en especial
+Microsoft.SqlServer.Types.dll (el ReportViewer la carga al ejecutar). Si falta, el visor dice
+'no se puede mostrar el reporte'. Si Visual Studio no la copia sola, agregala como referencia (Copiar local = True).
