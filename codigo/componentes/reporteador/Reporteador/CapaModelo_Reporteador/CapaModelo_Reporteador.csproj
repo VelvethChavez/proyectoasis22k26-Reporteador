@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Contratos\ClsIRepositorioGenerico.cs" />
     <Compile Include="Contratos\ClsIRepositorioReporteador.cs" />
+    <Compile Include="Entidades\ClsAplicacionReporteador.cs" />
     <Compile Include="Entidades\ClsReporteador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ClsRepositorio.cs" />

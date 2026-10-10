@@ -36,9 +36,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
             this.ReporteadorLblRutaReporte = new System.Windows.Forms.Label();
             this.ReporteadorLblNombreReporte = new System.Windows.Forms.Label();
+            this.ReporteadorLblAplicacionReporte = new System.Windows.Forms.Label();
             this.ReporteadorLblDatosBuscarReporte = new System.Windows.Forms.Label();
             this.ReporteadorTxtRutaReporte = new System.Windows.Forms.TextBox();
             this.ReporteadorTxtNombreReporte = new System.Windows.Forms.TextBox();
+            this.ReporteadorCboAplicacionReporte = new System.Windows.Forms.ComboBox();
             this.ReporteadorDgvReportes = new System.Windows.Forms.DataGridView();
             this.ReporteadorPnlFiltroBuscarReporte = new System.Windows.Forms.Panel();
             this.ReporteadorChkNombreReporte = new System.Windows.Forms.CheckBox();
@@ -69,7 +71,7 @@
             this.ReporteadorLblRutaReporte.AutoSize = true;
             this.ReporteadorLblRutaReporte.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteadorLblRutaReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.ReporteadorLblRutaReporte.Location = new System.Drawing.Point(37, 154);
+            this.ReporteadorLblRutaReporte.Location = new System.Drawing.Point(37, 151);
             this.ReporteadorLblRutaReporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ReporteadorLblRutaReporte.Name = "ReporteadorLblRutaReporte";
             this.ReporteadorLblRutaReporte.Size = new System.Drawing.Size(198, 27);
@@ -81,19 +83,30 @@
             this.ReporteadorLblNombreReporte.AutoSize = true;
             this.ReporteadorLblNombreReporte.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteadorLblNombreReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.ReporteadorLblNombreReporte.Location = new System.Drawing.Point(37, 229);
+            this.ReporteadorLblNombreReporte.Location = new System.Drawing.Point(37, 214);
             this.ReporteadorLblNombreReporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ReporteadorLblNombreReporte.Name = "ReporteadorLblNombreReporte";
             this.ReporteadorLblNombreReporte.Size = new System.Drawing.Size(230, 27);
             this.ReporteadorLblNombreReporte.TabIndex = 4;
             this.ReporteadorLblNombreReporte.Text = "Nombre del reporte: *";
             // 
+            // ReporteadorLblAplicacionReporte
+            // 
+            this.ReporteadorLblAplicacionReporte.AutoSize = true;
+            this.ReporteadorLblAplicacionReporte.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReporteadorLblAplicacionReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
+            this.ReporteadorLblAplicacionReporte.Location = new System.Drawing.Point(38, 277);
+            this.ReporteadorLblAplicacionReporte.Name = "ReporteadorLblAplicacionReporte";
+            this.ReporteadorLblAplicacionReporte.Size = new System.Drawing.Size(135, 27);
+            this.ReporteadorLblAplicacionReporte.TabIndex = 28;
+            this.ReporteadorLblAplicacionReporte.Text = "Aplicación: *";
+            // 
             // ReporteadorLblDatosBuscarReporte
             // 
             this.ReporteadorLblDatosBuscarReporte.AutoSize = true;
             this.ReporteadorLblDatosBuscarReporte.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteadorLblDatosBuscarReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(87)))), ((int)(((byte)(91)))));
-            this.ReporteadorLblDatosBuscarReporte.Location = new System.Drawing.Point(37, 384);
+            this.ReporteadorLblDatosBuscarReporte.Location = new System.Drawing.Point(37, 402);
             this.ReporteadorLblDatosBuscarReporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ReporteadorLblDatosBuscarReporte.Name = "ReporteadorLblDatosBuscarReporte";
             this.ReporteadorLblDatosBuscarReporte.Size = new System.Drawing.Size(276, 27);
@@ -114,11 +127,21 @@
             // 
             this.ReporteadorTxtNombreReporte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ReporteadorTxtNombreReporte.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReporteadorTxtNombreReporte.Location = new System.Drawing.Point(292, 214);
+            this.ReporteadorTxtNombreReporte.Location = new System.Drawing.Point(292, 202);
             this.ReporteadorTxtNombreReporte.Margin = new System.Windows.Forms.Padding(4);
             this.ReporteadorTxtNombreReporte.Name = "ReporteadorTxtNombreReporte";
             this.ReporteadorTxtNombreReporte.Size = new System.Drawing.Size(639, 39);
             this.ReporteadorTxtNombreReporte.TabIndex = 7;
+            // 
+            // ReporteadorCboAplicacionReporte
+            // 
+            this.ReporteadorCboAplicacionReporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReporteadorCboAplicacionReporte.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReporteadorCboAplicacionReporte.FormattingEnabled = true;
+            this.ReporteadorCboAplicacionReporte.Location = new System.Drawing.Point(292, 264);
+            this.ReporteadorCboAplicacionReporte.Name = "ReporteadorCboAplicacionReporte";
+            this.ReporteadorCboAplicacionReporte.Size = new System.Drawing.Size(639, 40);
+            this.ReporteadorCboAplicacionReporte.TabIndex = 29;
             // 
             // ReporteadorDgvReportes
             // 
@@ -262,7 +285,7 @@
             // ReporteadorBtnEditar
             // 
             this.ReporteadorBtnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.ReporteadorBtnEditar.Location = new System.Drawing.Point(151, 289);
+            this.ReporteadorBtnEditar.Location = new System.Drawing.Point(151, 316);
             this.ReporteadorBtnEditar.Margin = new System.Windows.Forms.Padding(5);
             this.ReporteadorBtnEditar.Name = "ReporteadorBtnEditar";
             this.ReporteadorBtnEditar.ReporteadorTxtNombreReporte = null;
@@ -274,7 +297,7 @@
             // 
             this.ReporteadorBtnEliminar.BackColor = System.Drawing.Color.Transparent;
             this.ReporteadorBtnEliminar.GridReportes = null;
-            this.ReporteadorBtnEliminar.Location = new System.Drawing.Point(260, 289);
+            this.ReporteadorBtnEliminar.Location = new System.Drawing.Point(260, 316);
             this.ReporteadorBtnEliminar.Margin = new System.Windows.Forms.Padding(0);
             this.ReporteadorBtnEliminar.Name = "ReporteadorBtnEliminar";
             this.ReporteadorBtnEliminar.Size = new System.Drawing.Size(75, 69);
@@ -285,7 +308,7 @@
             // ReporteadorBtnLimpiar
             // 
             this.ReporteadorBtnLimpiar.BackColor = System.Drawing.Color.Transparent;
-            this.ReporteadorBtnLimpiar.Location = new System.Drawing.Point(368, 289);
+            this.ReporteadorBtnLimpiar.Location = new System.Drawing.Point(368, 316);
             this.ReporteadorBtnLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.ReporteadorBtnLimpiar.Name = "ReporteadorBtnLimpiar";
             this.ReporteadorBtnLimpiar.Size = new System.Drawing.Size(75, 69);
@@ -294,7 +317,7 @@
             // ReporteadorBtnGuardar
             // 
             this.ReporteadorBtnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.ReporteadorBtnGuardar.Location = new System.Drawing.Point(43, 289);
+            this.ReporteadorBtnGuardar.Location = new System.Drawing.Point(43, 316);
             this.ReporteadorBtnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.ReporteadorBtnGuardar.MaximumSize = new System.Drawing.Size(75, 69);
             this.ReporteadorBtnGuardar.MinimumSize = new System.Drawing.Size(75, 69);
@@ -364,7 +387,7 @@
             // ReporteadorBtnVerReporte
             // 
             this.ReporteadorBtnVerReporte.BackColor = System.Drawing.Color.Transparent;
-            this.ReporteadorBtnVerReporte.Location = new System.Drawing.Point(938, 214);
+            this.ReporteadorBtnVerReporte.Location = new System.Drawing.Point(940, 216);
             this.ReporteadorBtnVerReporte.Name = "ReporteadorBtnVerReporte";
             this.ReporteadorBtnVerReporte.Size = new System.Drawing.Size(75, 69);
             this.ReporteadorBtnVerReporte.TabIndex = 27;
@@ -376,6 +399,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(230)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(1163, 832);
+            this.Controls.Add(this.ReporteadorCboAplicacionReporte);
+            this.Controls.Add(this.ReporteadorLblAplicacionReporte);
             this.Controls.Add(this.ReporteadorBtnVerReporte);
             this.Controls.Add(this.ReporteadorBtnAyuda);
             this.Controls.Add(this.ReporteadorBtnRuta);
@@ -422,9 +447,11 @@
         private System.Windows.Forms.PictureBox ReporteadorPbLogo;
         private System.Windows.Forms.Label ReporteadorLblRutaReporte;
         private System.Windows.Forms.Label ReporteadorLblNombreReporte;
+        private System.Windows.Forms.Label ReporteadorLblAplicacionReporte;
         private System.Windows.Forms.Label ReporteadorLblDatosBuscarReporte;
         private System.Windows.Forms.TextBox ReporteadorTxtRutaReporte;
         private System.Windows.Forms.TextBox ReporteadorTxtNombreReporte;
+        private System.Windows.Forms.ComboBox ReporteadorCboAplicacionReporte;
         private System.Windows.Forms.DataGridView ReporteadorDgvReportes;
         private System.Windows.Forms.CheckBox ReporteadorChkNombreReporte;
         private System.Windows.Forms.CheckBox ReporteadorChkFechaReporte;

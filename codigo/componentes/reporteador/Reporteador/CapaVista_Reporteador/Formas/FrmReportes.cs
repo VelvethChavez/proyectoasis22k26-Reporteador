@@ -2,16 +2,16 @@
     VELVETH SARAI CHAVEZ MEJIA 0901 23 6269
 */
 
+using CapaControlador_Reporteador;
+using CapaModelo_Reporteador.Entidades;
+using CapaVista_Reporteador.Formas;
+using CapaVista_BtnVerReporte_Reporteador;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using CapaControlador_Reporteador;
-using CapaModelo_Reporteador.Entidades;
-using CapaVista_BtnVerReporte_Reporteador;
-using CapaVista_Reporteador.Formas;
 
 namespace CapaVista_Reporteador
 {
@@ -23,7 +23,7 @@ namespace CapaVista_Reporteador
 
         private int _NumeroReporteEdicion = 0;
 
-        private int _IdAplicacionSeleccionada = 4;
+        private int _IdAplicacionSeleccionada = 0;
 
         private string _RutaReporteAplicacion = string.Empty;
 
@@ -131,6 +131,8 @@ namespace CapaVista_Reporteador
             {
                 ReporteadorMetCargarTabla();
 
+                ReporteadorMetCargarAplicaciones();
+
                 _ModoEdicion = false;
 
                 _NumeroReporteEdicion = 0;
@@ -153,13 +155,30 @@ namespace CapaVista_Reporteador
         {
             try
             {
-                if (_IdAplicacionSeleccionada <= 0)
+                int IdAplicacionReporte;
+
+                if (_ModoEdicion)
                 {
-                    ReporteadorMetMostrarError(
-                        "Debe seleccionar una aplicación antes de guardar el reporte."
+                    IdAplicacionReporte = _IdAplicacionSeleccionada;
+                }
+                else
+                {
+                    if (ReporteadorCboAplicacionReporte.SelectedValue == null)
+                    {
+                        ReporteadorMetMostrarError(
+                            "Debe seleccionar una aplicación antes de guardar el reporte."
+                        );
+
+                        ReporteadorCboAplicacionReporte.Focus();
+
+                        return;
+                    }
+
+                    IdAplicacionReporte = Convert.ToInt32(
+                        ReporteadorCboAplicacionReporte.SelectedValue
                     );
 
-                    return;
+                    _IdAplicacionSeleccionada = IdAplicacionReporte;
                 }
 
                 string NombreReporte = ReporteadorTxtNombreReporte.Text.Trim();
@@ -295,7 +314,7 @@ namespace CapaVista_Reporteador
 
                 _ModeloReporteador.FechaReporte = ReporteadorDtpFechaReporte.Value.Date;
 
-                _ModeloReporteador.IdAplicacion = _IdAplicacionSeleccionada;
+                _ModeloReporteador.IdAplicacion = IdAplicacionReporte;
 
                 _ModeloReporteador.Estado = _ModoEdicion
                     ? ClsEstadoEntidad.Modified
@@ -321,6 +340,8 @@ namespace CapaVista_Reporteador
 
                     ReporteadorMetLimpiarFormulario();
 
+                    ReporteadorMetCargarAplicaciones();
+
                     ReporteadorMetCargarTabla();
 
                     ReporteadorMetPrepararNuevoRegistro();
@@ -341,6 +362,8 @@ namespace CapaVista_Reporteador
                     _NumeroReporteEdicion = 0;
 
                     ReporteadorMetLimpiarFormulario();
+
+                    ReporteadorMetCargarAplicaciones();
 
                     ReporteadorMetCargarTabla();
 
@@ -412,6 +435,15 @@ namespace CapaVista_Reporteador
             }
         }
 
+        private void ReporteadorMetCargarAplicaciones()
+        {
+            ReporteadorCboAplicacionReporte.DataSource =
+                _ModeloReporteador.ReporteadorMetObtenerAplicaciones().ToList();
+            ReporteadorCboAplicacionReporte.DisplayMember = "NombreAplicacionMostrar";
+            ReporteadorCboAplicacionReporte.ValueMember = "IdAplicacion";
+            ReporteadorCboAplicacionReporte.SelectedIndex = -1;
+        }
+
         // ================================================================
         // BOTÓN EDITAR
         // ================================================================
@@ -475,6 +507,8 @@ namespace CapaVista_Reporteador
         private void ReporteadorMetLimpiarFormulario()
         {
             ReporteadorTxtNombreReporte.Clear();
+
+            ReporteadorCboAplicacionReporte.SelectedIndex = -1;
 
             ReporteadorTxtRutaReporte.Clear();
 
@@ -649,7 +683,7 @@ namespace CapaVista_Reporteador
         {
             Help.ShowHelp(
                 this,
-                "C:/proyectoasis22k26-Reporteador/ayuda/componentes/reporteador/AyudaReporteador.chm",
+                "C:proyectoasis22k26/ayuda/componentes/reporteador/AyudaReporteador.chm",
                 "Ayuda_General_Reporteador.html"
             );
         }

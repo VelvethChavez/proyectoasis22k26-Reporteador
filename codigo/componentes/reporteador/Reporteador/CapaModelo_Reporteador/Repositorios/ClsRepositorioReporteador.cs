@@ -11,6 +11,60 @@ namespace CapaModelo_Reporteador.Repositorios
         public ClsRepositorioReporteador()
             : base() { }
 
+        public IEnumerable<ClsAplicacionReporteador> ReporteadorMetObtenerAplicaciones()
+        {
+            List<ClsAplicacionReporteador> Lista = new List<ClsAplicacionReporteador>();
+
+            string Consulta =
+                @"
+                SELECT idAplicacion, nombreAplicacion
+                FROM tblAplicacion
+                WHERE is_active = 1
+                ORDER BY nombreAplicacion";
+
+            using (OdbcConnection Conexion = ReporteadorMetObtenerConexion())
+            {
+                Conexion.Open();
+
+                using (OdbcCommand Comando = new OdbcCommand(Consulta, Conexion))
+                using (OdbcDataReader Lector = Comando.ExecuteReader())
+                {
+                    while (Lector.Read())
+                    {
+                        Lista.Add(
+                            new ClsAplicacionReporteador
+                            {
+                                IdAplicacion = Convert.ToInt32(Lector["idAplicacion"]),
+                                NombreAplicacion = Convert.ToString(Lector["nombreAplicacion"])
+                            }
+                        );
+                    }
+                }
+            }
+
+            return Lista;
+        }
+
+        public bool ReporteadorMetExisteAplicacionReporte(int IdAplicacion)
+        {
+            string Consulta =
+                @"
+                SELECT COUNT(*)
+                FROM tblAplicacionReporte
+                WHERE idAplicacion = ?";
+
+            using (OdbcConnection Conexion = ReporteadorMetObtenerConexion())
+            {
+                Conexion.Open();
+
+                using (OdbcCommand Comando = new OdbcCommand(Consulta, Conexion))
+                {
+                    Comando.Parameters.Add(new OdbcParameter("p_idAplicacion", IdAplicacion));
+                    return Convert.ToInt32(Comando.ExecuteScalar()) > 0;
+                }
+            }
+        }
+
         // ============================================================
         // OBTENER SIGUIENTE NÚMERO DE REPORTE
         // ============================================================
