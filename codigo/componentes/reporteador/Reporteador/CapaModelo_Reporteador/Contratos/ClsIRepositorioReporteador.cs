@@ -6,6 +6,10 @@ namespace CapaModelo_Reporteador.Contratos
 {
     public interface ClsIRepositorioReporteador
     {
+        IEnumerable<ClsAplicacionReporteador> ReporteadorMetObtenerAplicaciones();
+
+        bool ReporteadorMetExisteAplicacionReporte(int IdAplicacion);
+
         void ReporteadorMetAgregar(ClsReporteador Reporte, int IdAplicacion);
 
         void ReporteadorMetEditar(ClsReporteador Reporte);

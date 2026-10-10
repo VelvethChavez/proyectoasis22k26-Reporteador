@@ -34,9 +34,9 @@ namespace CapaControlador_Reporteador
         {
             try
             {
-                if (IdAplicacion <= 0)
+                if (IdAplicacion < 0)
                 {
-                    return "Debe seleccionar una aplicación antes de guardar el reporte.";
+                    return "La aplicación seleccionada no es válida.";
                 }
 
                 if (NumeroReporte <= 0)
@@ -63,6 +63,14 @@ namespace CapaControlador_Reporteador
                 if (Estado == ClsEstadoEntidad.Modified)
                 {
                     NumeroReporteExcluir = NumeroReporte;
+                }
+
+                if (
+                    Estado == ClsEstadoEntidad.Added
+                    && _Repositorio.ReporteadorMetExisteAplicacionReporte(IdAplicacion)
+                )
+                {
+                    return "Solo un reporte por aplicación.";
                 }
 
                 // ----------------------------------------------------
@@ -150,6 +158,11 @@ namespace CapaControlador_Reporteador
         public IEnumerable<ClsReporteador> ReporteadorMetObtenerTodos(int IdAplicacion)
         {
             return _Repositorio.ReporteadorMetObtenerTodos(IdAplicacion);
+        }
+
+        public IEnumerable<ClsAplicacionReporteador> ReporteadorMetObtenerAplicaciones()
+        {
+            return _Repositorio.ReporteadorMetObtenerAplicaciones();
         }
 
         public int ReporteadorMetObtenerMaximoNumeroReporteGlobal()
