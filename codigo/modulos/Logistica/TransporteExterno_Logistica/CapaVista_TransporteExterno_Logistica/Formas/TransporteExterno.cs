@@ -19,26 +19,38 @@ namespace CapaVista_TransporteExterno_Logistica.Formas
 
         private void LogisticaBtnRegistroTransporte_Click(object sender, EventArgs e)
         {
+            RegistroTransporteExterno frm = new RegistroTransporteExterno();
+            frm.ShowDialog();
         }
 
         private void LogisticaBtnRutaSeguimiento_Click(object sender, EventArgs e)
         {
+            RutaYSeguimiento frm = new RutaYSeguimiento();
+            frm.ShowDialog();
         }
 
         private void LogisticaBtnProductosCarga_Click(object sender, EventArgs e)
         {
+            ProductosATrasladar frm = new ProductosATrasladar();
+            frm.ShowDialog();
         }
 
         private void LogisticaBtnCostosPagos_Click(object sender, EventArgs e)
         {
+            CostosYPagosDelServicio frm = new CostosYPagosDelServicio();
+            frm.ShowDialog();
         }
 
         private void LogisticaBtnIncidenciasEHistorial_Click(object sender, EventArgs e)
         {
+            IncidenciasEHistorial frm = new IncidenciasEHistorial();
+            frm.ShowDialog();
         }
 
         private void LogisticaBtnListadoTransporteExterno_Click(object sender, EventArgs e)
         {
+            ListadoTransporteExterno frm = new ListadoTransporteExterno();
+            frm.ShowDialog();
         }
     }
 }

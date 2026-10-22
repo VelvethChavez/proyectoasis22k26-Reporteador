@@ -552,7 +552,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "IncidenciasEHistorial";
-            this.Text = "5024 IncidenciasEHistorial";
+            this.Text = "5024 FrmIncidenciasEHistorial";
             this.panel1.ResumeLayout(false);
             this.LogisticaTbcTransporteExterno.ResumeLayout(false);
             this.LogisticaTabIncidencias.ResumeLayout(false);

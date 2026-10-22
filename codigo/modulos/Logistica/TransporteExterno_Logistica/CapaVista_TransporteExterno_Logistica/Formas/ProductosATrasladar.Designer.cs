@@ -148,7 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ProductosATrasladar";
-            this.Text = "5022 ProductosATrasladar";
+            this.Text = "5022 FrmProductosATrasladar";
             this.LogisticaPnlProductosATrasladar.ResumeLayout(false);
             this.LogisticaPnlProductosATrasladar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductos)).EndInit();

@@ -1,4 +1,4 @@
-﻿namespace pruaeba
+﻿namespace CapaVista_TransporteExterno_Logistica.Formas
 {
     partial class RutaYSeguimiento
     {
@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RutaYSeguimiento));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.LogisticaPnlUbicacionActual = new System.Windows.Forms.GroupBox();
+            this.LogisticaPnlMapaUbicacion = new System.Windows.Forms.Panel();
             this.LogisticaBtnActualizarUbicacion = new System.Windows.Forms.Button();
             this.LogisticaLblValorUltimaActualizacion = new System.Windows.Forms.Label();
             this.LogisticaLblValorEstadoUbicacion = new System.Windows.Forms.Label();
@@ -38,8 +39,7 @@
             this.LogisticaLblEstadoUbicacion = new System.Windows.Forms.Label();
             this.LogisticaLblUltimaActualizacion = new System.Windows.Forms.Label();
             this.LogisticaLblUbicacionTransporte = new System.Windows.Forms.Label();
-            this.Imgprueba = new System.Windows.Forms.Button();
-            this.LogisticaPnlUbicacionActual = new System.Windows.Forms.Panel();
+            this.LogisticaPnlEncabezadoUbicacionActual = new System.Windows.Forms.Panel();
             this.LogisticaLblTituloUbicacionActual = new System.Windows.Forms.Label();
             this.LogisticaPnlOrigenDestino = new System.Windows.Forms.GroupBox();
             this.LogisticaLblDestino = new System.Windows.Forms.Label();
@@ -59,39 +59,46 @@
             this.LogisticaBtnModificarProducto = new System.Windows.Forms.Button();
             this.LogisticaBtnEliminarProducto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.LogisticaPnlUbicacionActual.SuspendLayout();
+            this.LogisticaPnlEncabezadoUbicacionActual.SuspendLayout();
             this.LogisticaPnlOrigenDestino.SuspendLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.LogisticaPnlUbicacionActual);
             this.panel1.Controls.Add(this.LogisticaPnlOrigenDestino);
             this.panel1.Location = new System.Drawing.Point(56, 127);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1001, 508);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox4
+            // LogisticaPnlUbicacionActual
             // 
-            this.groupBox4.Controls.Add(this.LogisticaBtnActualizarUbicacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblValorUltimaActualizacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblValorEstadoUbicacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblValorUbicacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblEstadoUbicacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblUltimaActualizacion);
-            this.groupBox4.Controls.Add(this.LogisticaLblUbicacionTransporte);
-            this.groupBox4.Controls.Add(this.Imgprueba);
-            this.groupBox4.Controls.Add(this.LogisticaPnlUbicacionActual);
-            this.groupBox4.Location = new System.Drawing.Point(6, 192);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(995, 314);
-            this.groupBox4.TabIndex = 25;
-            this.groupBox4.TabStop = false;
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaPnlMapaUbicacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaBtnActualizarUbicacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblValorUltimaActualizacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblValorEstadoUbicacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblValorUbicacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblEstadoUbicacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblUltimaActualizacion);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblUbicacionTransporte);
+            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaPnlEncabezadoUbicacionActual);
+            this.LogisticaPnlUbicacionActual.Location = new System.Drawing.Point(6, 192);
+            this.LogisticaPnlUbicacionActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlUbicacionActual.Name = "LogisticaPnlUbicacionActual";
+            this.LogisticaPnlUbicacionActual.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlUbicacionActual.Size = new System.Drawing.Size(995, 314);
+            this.LogisticaPnlUbicacionActual.TabIndex = 25;
+            this.LogisticaPnlUbicacionActual.TabStop = false;
+            // 
+            // LogisticaPnlMapaUbicacion
+            // 
+            this.LogisticaPnlMapaUbicacion.Location = new System.Drawing.Point(7, 62);
+            this.LogisticaPnlMapaUbicacion.Name = "LogisticaPnlMapaUbicacion";
+            this.LogisticaPnlMapaUbicacion.Size = new System.Drawing.Size(451, 242);
+            this.LogisticaPnlMapaUbicacion.TabIndex = 38;
             // 
             // LogisticaBtnActualizarUbicacion
             // 
@@ -166,27 +173,15 @@
             this.LogisticaLblUbicacionTransporte.TabIndex = 20;
             this.LogisticaLblUbicacionTransporte.Text = "Ubicación: ";
             // 
-            // Imgprueba
+            // LogisticaPnlEncabezadoUbicacionActual
             // 
-            this.Imgprueba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
-            this.Imgprueba.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Imgprueba.BackgroundImage")));
-            this.Imgprueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Imgprueba.Location = new System.Drawing.Point(6, 56);
-            this.Imgprueba.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Imgprueba.Name = "Imgprueba";
-            this.Imgprueba.Size = new System.Drawing.Size(438, 239);
-            this.Imgprueba.TabIndex = 31;
-            this.Imgprueba.UseVisualStyleBackColor = false;
-            // 
-            // LogisticaPnlUbicacionActual
-            // 
-            this.LogisticaPnlUbicacionActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblTituloUbicacionActual);
-            this.LogisticaPnlUbicacionActual.Location = new System.Drawing.Point(6, 16);
-            this.LogisticaPnlUbicacionActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaPnlUbicacionActual.Name = "LogisticaPnlUbicacionActual";
-            this.LogisticaPnlUbicacionActual.Size = new System.Drawing.Size(989, 36);
-            this.LogisticaPnlUbicacionActual.TabIndex = 18;
+            this.LogisticaPnlEncabezadoUbicacionActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaPnlEncabezadoUbicacionActual.Controls.Add(this.LogisticaLblTituloUbicacionActual);
+            this.LogisticaPnlEncabezadoUbicacionActual.Location = new System.Drawing.Point(6, 16);
+            this.LogisticaPnlEncabezadoUbicacionActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlEncabezadoUbicacionActual.Name = "LogisticaPnlEncabezadoUbicacionActual";
+            this.LogisticaPnlEncabezadoUbicacionActual.Size = new System.Drawing.Size(989, 36);
+            this.LogisticaPnlEncabezadoUbicacionActual.TabIndex = 18;
             // 
             // LogisticaLblTituloUbicacionActual
             // 
@@ -285,20 +280,20 @@
             // 
             this.LogisticaCboOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.LogisticaCboOrigen.FormattingEnabled = true;
-            this.LogisticaCboOrigen.Location = new System.Drawing.Point(621, 49);
+            this.LogisticaCboOrigen.Location = new System.Drawing.Point(163, 50);
             this.LogisticaCboOrigen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaCboOrigen.Name = "LogisticaCboOrigen";
-            this.LogisticaCboOrigen.Size = new System.Drawing.Size(289, 25);
+            this.LogisticaCboOrigen.Size = new System.Drawing.Size(290, 25);
             this.LogisticaCboOrigen.TabIndex = 12;
             // 
             // LogisticaCboDestino
             // 
             this.LogisticaCboDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.LogisticaCboDestino.FormattingEnabled = true;
-            this.LogisticaCboDestino.Location = new System.Drawing.Point(163, 50);
+            this.LogisticaCboDestino.Location = new System.Drawing.Point(621, 50);
             this.LogisticaCboDestino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaCboDestino.Name = "LogisticaCboDestino";
-            this.LogisticaCboDestino.Size = new System.Drawing.Size(289, 25);
+            this.LogisticaCboDestino.Size = new System.Drawing.Size(290, 25);
             this.LogisticaCboDestino.TabIndex = 8;
             // 
             // LogisticaLblDireccionOrigen
@@ -407,12 +402,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "RutaYSeguimiento";
-            this.Text = "5021 RutaYSeguimiento";
+            this.Text = "5021 FrmRutaYSeguimiento";
             this.panel1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.LogisticaPnlUbicacionActual.ResumeLayout(false);
             this.LogisticaPnlUbicacionActual.PerformLayout();
+            this.LogisticaPnlEncabezadoUbicacionActual.ResumeLayout(false);
+            this.LogisticaPnlEncabezadoUbicacionActual.PerformLayout();
             this.LogisticaPnlOrigenDestino.ResumeLayout(false);
             this.LogisticaPnlOrigenDestino.PerformLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.ResumeLayout(false);
@@ -437,7 +432,7 @@
         private System.Windows.Forms.ComboBox LogisticaCboDestino;
         private System.Windows.Forms.Label LogisticaLblDireccionOrigen;
         private System.Windows.Forms.Label LogisticaLblOrigen;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox LogisticaPnlUbicacionActual;
         private System.Windows.Forms.Button LogisticaBtnActualizarUbicacion;
         private System.Windows.Forms.Label LogisticaLblValorUltimaActualizacion;
         private System.Windows.Forms.Label LogisticaLblValorEstadoUbicacion;
@@ -445,13 +440,13 @@
         private System.Windows.Forms.Label LogisticaLblEstadoUbicacion;
         private System.Windows.Forms.Label LogisticaLblUltimaActualizacion;
         private System.Windows.Forms.Label LogisticaLblUbicacionTransporte;
-        private System.Windows.Forms.Button Imgprueba;
-        private System.Windows.Forms.Panel LogisticaPnlUbicacionActual;
+        private System.Windows.Forms.Panel LogisticaPnlEncabezadoUbicacionActual;
         private System.Windows.Forms.Label LogisticaLblTituloUbicacionActual;
         private System.Windows.Forms.Label LogisticaLblSeleccionarTransporte;
         private System.Windows.Forms.ComboBox LogisticaCboNumeroGuia;
         private System.Windows.Forms.Button LogisticaBtnAgregarProducto;
         private System.Windows.Forms.Button LogisticaBtnModificarProducto;
         private System.Windows.Forms.Button LogisticaBtnEliminarProducto;
+        private System.Windows.Forms.Panel LogisticaPnlMapaUbicacion;
     }
 }

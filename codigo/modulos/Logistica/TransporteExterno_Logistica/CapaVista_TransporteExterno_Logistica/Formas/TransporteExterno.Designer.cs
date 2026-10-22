@@ -164,7 +164,7 @@
             this.MaximizeBox = false;
             this.Name = "TransporteExterno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "5012 TransporteExterno";
+            this.Text = "5012 FrmTransporteExterno";
             this.LogisticaPnlPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -602,7 +602,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "RegistroTransporteExterno";
-            this.Text = "5020 RegistroTransporteExterno";
+            this.Text = "5020 FrmRegistroTransporteExterno";
             this.LogisticaPnlInfoTransporteExterno.ResumeLayout(false);
             this.LogisticaPnlInfoTransporteExterno.PerformLayout();
             this.LogisticaPnlEncabezadoInfTransporteExterno.ResumeLayout(false);

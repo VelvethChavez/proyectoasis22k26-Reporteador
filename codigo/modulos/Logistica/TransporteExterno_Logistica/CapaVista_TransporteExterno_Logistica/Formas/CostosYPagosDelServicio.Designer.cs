@@ -435,7 +435,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "CostosYPagosDelServicio";
-            this.Text = "5023 CostosYPagosDelServicio";
+            this.Text = "5023 FrmCostosYPagosDelServicio";
             this.LogisticaPnlCostoYPagosDelServicio.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDvgSolicitudDePagos)).EndInit();

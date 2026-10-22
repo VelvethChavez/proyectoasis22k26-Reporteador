@@ -52,6 +52,8 @@
             // 
             // LogisticaDvglListadoTransportes
             // 
+            this.LogisticaDvglListadoTransportes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.LogisticaDvglListadoTransportes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.LogisticaDvglListadoTransportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LogisticaDvglListadoTransportes.Location = new System.Drawing.Point(7, 51);
             this.LogisticaDvglListadoTransportes.Name = "LogisticaDvglListadoTransportes";
@@ -59,6 +61,7 @@
             this.LogisticaDvglListadoTransportes.RowTemplate.Height = 24;
             this.LogisticaDvglListadoTransportes.Size = new System.Drawing.Size(1068, 557);
             this.LogisticaDvglListadoTransportes.TabIndex = 19;
+            this.LogisticaDvglListadoTransportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LogisticaDvglListadoTransportes_CellContentClick);
             // 
             // LogisticaPnlListadoTransportes
             // 
@@ -92,7 +95,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ListadoTransporteExterno";
-            this.Text = "5025 ListadoTransporteExterno";
+            this.Text = "5025 FrmListadoTransporteExterno";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDvglListadoTransportes)).EndInit();
             this.LogisticaPnlListadoTransportes.ResumeLayout(false);
