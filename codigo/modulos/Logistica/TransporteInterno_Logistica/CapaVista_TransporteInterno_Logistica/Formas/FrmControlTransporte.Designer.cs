@@ -95,6 +95,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmControlTransporte";
             this.Text = "5015-Control de Transporte ";
+            this.Load += new System.EventHandler(this.FrmControlTransporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
