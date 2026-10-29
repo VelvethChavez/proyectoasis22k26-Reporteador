@@ -25,7 +25,7 @@ namespace CapaVista_Inventario_Logistica.Formas
             InitializeComponent();
             /*_Fuentes.Add("DsMantenimientoTipoMovimiento", _Datos.LogisticaMetObtenerTodos());*/
             /* LogisticaNavTipoMovimiento.NavegadorMetConfigurar("tblTipoMovimiento", 4, 6 , _Fuentes); */
-            LogisticaNavTipoMovimiento.NavegadorMetConfigurar("tbltipomovimiento", 4, 6);
+            LogisticaNavTipoMovimiento.NavegadorMetConfigurar("tblTipoMovimiento", 4, 6);
         }
     }
 }

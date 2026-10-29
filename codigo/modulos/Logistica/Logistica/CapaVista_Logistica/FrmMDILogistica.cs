@@ -18,7 +18,7 @@
 using System;
 using System.Windows.Forms;
 using CapaVista_Inventario_Logistica.Formas;
-using CapaVista_Traslados_Logistica.Formas;
+using CapaVista_Traslados_Logistica.Formularios;
 using CapaVista_MuestreoAuditoria_Logistica;
 using CapaVista_CierreInventario.Forms;
 using System.Drawing;
