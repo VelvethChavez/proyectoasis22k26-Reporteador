@@ -55,7 +55,7 @@
             this.LogisticaLblDescripcionTipoTraslado.ForeColor = System.Drawing.Color.White;
             this.LogisticaLblDescripcionTipoTraslado.Location = new System.Drawing.Point(27, 53);
             this.LogisticaLblDescripcionTipoTraslado.Name = "LogisticaLblDescripcionTipoTraslado";
-            this.LogisticaLblDescripcionTipoTraslado.Size = new System.Drawing.Size(281, 19);
+            this.LogisticaLblDescripcionTipoTraslado.Size = new System.Drawing.Size(354, 23);
             this.LogisticaLblDescripcionTipoTraslado.TabIndex = 1;
             this.LogisticaLblDescripcionTipoTraslado.Text = "Seleccione el tipo de traslado para continuar.";
             // 
@@ -67,7 +67,7 @@
             this.LogisticaTituloTipoTraslado.ForeColor = System.Drawing.Color.White;
             this.LogisticaTituloTipoTraslado.Location = new System.Drawing.Point(25, 15);
             this.LogisticaTituloTipoTraslado.Name = "LogisticaTituloTipoTraslado";
-            this.LogisticaTituloTipoTraslado.Size = new System.Drawing.Size(189, 31);
+            this.LogisticaTituloTipoTraslado.Size = new System.Drawing.Size(232, 38);
             this.LogisticaTituloTipoTraslado.TabIndex = 0;
             this.LogisticaTituloTipoTraslado.Text = "Tipo de Traslado";
             // 
@@ -101,7 +101,7 @@
             // 
             // FrmTipoTraslado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(503, 257);
@@ -117,7 +117,7 @@
             this.Name = "FrmTipoTraslado";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Selección de Tipo de Traslado";
+            this.Text = "5027-Selección de Tipo de Traslado";
             this.LogisticaPnlTipoTraslado.ResumeLayout(false);
             this.LogisticaPnlTipoTraslado.PerformLayout();
             this.ResumeLayout(false);
