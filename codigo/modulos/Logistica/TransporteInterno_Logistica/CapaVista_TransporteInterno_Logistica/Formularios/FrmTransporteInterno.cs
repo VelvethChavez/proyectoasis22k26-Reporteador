@@ -68,17 +68,6 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
         }
 
         // ============================================
-        // BOTÓN 3 - TIPO DE TRASLADO
-        // ============================================
-
-        private void LogisticaBtnTransporte_Click(
-            object sender, EventArgs e)
-        {
-            LogisticaMetAbrirFormulario(
-                new FrmTipoTraslado());
-        }
-
-        // ============================================
         // GESTIÓN DE VIAJES
         // ============================================
 

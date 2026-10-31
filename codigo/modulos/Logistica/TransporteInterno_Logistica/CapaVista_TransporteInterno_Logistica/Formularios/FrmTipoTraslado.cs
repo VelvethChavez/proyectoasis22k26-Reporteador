@@ -49,7 +49,7 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
 
         private void LogisticaBtntTransporteExterno_Click(object sender, EventArgs e)
         {
-            LogisticaMetAbrirFormulario(new CapaVista_TransporteExterno_Logistica.Formularios.TransporteExterno());
+            LogisticaMetAbrirFormulario(new CapaVista_TransporteExterno_Logistica.Formularios.FrmTransporteExterno());
         }
     }
 }

@@ -34,7 +34,6 @@
             this.LogisticaLblDescripcionTransporteInterno = new System.Windows.Forms.Label();
             this.LogisticaBtnConsultaTransporte = new System.Windows.Forms.Button();
             this.LogisticaBtnControlTransporte = new System.Windows.Forms.Button();
-            this.LogisticaBtnTransporte = new System.Windows.Forms.Button();
             this.LogisticaBtnGestionViajes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -74,7 +73,7 @@
             // LogisticaBtnConsultaTransporte
             // 
             this.LogisticaBtnConsultaTransporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.LogisticaBtnConsultaTransporte.Location = new System.Drawing.Point(713, 18);
+            this.LogisticaBtnConsultaTransporte.Location = new System.Drawing.Point(815, 18);
             this.LogisticaBtnConsultaTransporte.Name = "LogisticaBtnConsultaTransporte";
             this.LogisticaBtnConsultaTransporte.Size = new System.Drawing.Size(75, 30);
             this.LogisticaBtnConsultaTransporte.TabIndex = 6;
@@ -85,23 +84,13 @@
             // LogisticaBtnControlTransporte
             // 
             this.LogisticaBtnControlTransporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.LogisticaBtnControlTransporte.Location = new System.Drawing.Point(804, 18);
+            this.LogisticaBtnControlTransporte.Location = new System.Drawing.Point(896, 18);
             this.LogisticaBtnControlTransporte.Name = "LogisticaBtnControlTransporte";
             this.LogisticaBtnControlTransporte.Size = new System.Drawing.Size(75, 30);
             this.LogisticaBtnControlTransporte.TabIndex = 7;
             this.LogisticaBtnControlTransporte.Text = "Control";
             this.LogisticaBtnControlTransporte.UseVisualStyleBackColor = false;
             this.LogisticaBtnControlTransporte.Click += new System.EventHandler(this.LogisticaBtnControlTransporte_Click);
-            // 
-            // LogisticaBtnTransporte
-            // 
-            this.LogisticaBtnTransporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.LogisticaBtnTransporte.Location = new System.Drawing.Point(896, 18);
-            this.LogisticaBtnTransporte.Name = "LogisticaBtnTransporte";
-            this.LogisticaBtnTransporte.Size = new System.Drawing.Size(75, 30);
-            this.LogisticaBtnTransporte.TabIndex = 8;
-            this.LogisticaBtnTransporte.Text = "Transporte";
-            this.LogisticaBtnTransporte.UseVisualStyleBackColor = false;
             // 
             // LogisticaBtnGestionViajes
             // 
@@ -121,7 +110,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1144, 741);
             this.Controls.Add(this.LogisticaBtnGestionViajes);
-            this.Controls.Add(this.LogisticaBtnTransporte);
             this.Controls.Add(this.LogisticaBtnControlTransporte);
             this.Controls.Add(this.LogisticaBtnConsultaTransporte);
             this.Controls.Add(this.LogisticaLblDescripcionTransporteInterno);
@@ -145,7 +133,6 @@
         private System.Windows.Forms.Label LogisticaLblDescripcionTransporteInterno;
         private System.Windows.Forms.Button LogisticaBtnConsultaTransporte;
         private System.Windows.Forms.Button LogisticaBtnControlTransporte;
-        private System.Windows.Forms.Button LogisticaBtnTransporte;
         private System.Windows.Forms.Button LogisticaBtnGestionViajes;
     }
 }
