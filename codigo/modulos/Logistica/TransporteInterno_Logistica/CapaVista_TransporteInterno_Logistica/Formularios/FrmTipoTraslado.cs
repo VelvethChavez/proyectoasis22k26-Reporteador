@@ -44,7 +44,7 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
 
         private void LogisticaBtnTransporteInterno_Click(object sender, EventArgs e)
         {
-            LogisticaMetAbrirFormulario(new FrmTransporteInterno());
+            LogisticaMetAbrirFormulario(new FrmMantenimientoTransporte());
         }
 
         private void LogisticaBtntTransporteExterno_Click(object sender, EventArgs e)

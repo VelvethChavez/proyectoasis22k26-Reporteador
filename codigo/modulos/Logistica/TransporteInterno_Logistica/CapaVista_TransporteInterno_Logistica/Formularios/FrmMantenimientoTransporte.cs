@@ -1,33 +1,36 @@
-﻿
-/*
- * ============================================================================
- * MÓDULO: LOGÍSTICA - TRANSPORTE INTERNO
- * FORMULARIO: FrmTransporteInterno
- *
- * DESCRIPCIÓN:
- * Formulario principal del submódulo de Transporte Interno, encargado de
- * administrar el acceso a las funcionalidades de gestión de viajes,
- * control de transporte y consultas de transporte interno.
- *
- * RESPONSABLE: BRIAN ANDREE DE LA CRUZ SOSA
- * CARNÉ: 0901-23-6124
- * ============================================================================
- */
+﻿// ============================================================================
+// MÓDULO: LOGÍSTICA - TRANSPORTE INTERNO
+// FORMULARIO: FrmMantenimientoTransporte
+// DESCRIPCIÓN:
+// Formulario encargado de administrar la información de los vehículos
+// utilizados en las operaciones de Transporte Interno.
+//
+// Permite registrar, consultar, modificar y eliminar los datos de los
+// vehículos, incluyendo placas, marcas, modelos, años de fabricación,
+// características de refrigeración, tipos y estados operativos.
+//
+// Integra el componente Navegador para gestionar los registros de la
+// tabla tblTransporte y facilitar el control de los vehículos disponibles.
+//
+// RESPONSABLE: BRIAN ANDREE DE LA CRUZ SOSA 0901-23-6124
+// ============================================================================
 
 using System;
 using System.Windows.Forms;
 
 namespace CapaVista_TransporteInterno_Logistica.Formularios
 {
-    public partial class FrmTransporteInterno : Form
+    public partial class FrmMantenimientoTransporte : Form
     {
         // ============================================
         // CONSTRUCTOR PRINCIPAL
         // ============================================
 
-        public FrmTransporteInterno()
+        public FrmMantenimientoTransporte()
         {
             InitializeComponent();
+
+            LogisticaNavTransporteInterno.NavegadorMetConfigurar("tblTransporte", 4, 6);
         }
 
         // ============================================
@@ -53,7 +56,7 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
             object sender, EventArgs e)
         {
             LogisticaMetAbrirFormulario(
-                new FrmConsultaTransporte());
+                new FrmMantenimientoEstadoTransporte());
         }
 
         // ============================================
@@ -64,7 +67,7 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
             object sender, EventArgs e)
         {
             LogisticaMetAbrirFormulario(
-                new FrmControlTransporte());
+                new FrmMantenimientoTipoTransporte());
         }
 
         // ============================================
@@ -75,7 +78,7 @@ namespace CapaVista_TransporteInterno_Logistica.Formularios
             object sender, EventArgs e)
         {
             LogisticaMetAbrirFormulario(
-                new FrmGestionViajes());
+                new FrmMantenimientoConductor());
         }
     }
 }

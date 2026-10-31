@@ -49,23 +49,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\FrmConsultaTransporte.cs">
+    <Compile Include="Formularios\FrmMantenimientoCamaraRefrigeracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmConsultaTransporte.Designer.cs">
-      <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMantenimientoCamaraRefrigeracion.Designer.cs">
+      <DependentUpon>FrmMantenimientoCamaraRefrigeracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmControlTransporte.cs">
+    <Compile Include="Formularios\FrmMantenimientoEstadoTransporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmControlTransporte.Designer.cs">
-      <DependentUpon>FrmControlTransporte.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMantenimientoEstadoTransporte.Designer.cs">
+      <DependentUpon>FrmMantenimientoEstadoTransporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmGestionViajes.cs">
+    <Compile Include="Formularios\FrmMantenimientoTipoTransporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmGestionViajes.Designer.cs">
-      <DependentUpon>FrmGestionViajes.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMantenimientoTipoTransporte.Designer.cs">
+      <DependentUpon>FrmMantenimientoTipoTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMantenimientoConductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMantenimientoConductor.Designer.cs">
+      <DependentUpon>FrmMantenimientoConductor.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmTipoTraslado.cs">
       <SubType>Form</SubType>
@@ -73,11 +79,11 @@
     <Compile Include="Formularios\FrmTipoTraslado.Designer.cs">
       <DependentUpon>FrmTipoTraslado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmTransporteInterno.cs">
+    <Compile Include="Formularios\FrmMantenimientoTransporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmTransporteInterno.Designer.cs">
-      <DependentUpon>FrmTransporteInterno.cs</DependentUpon>
+    <Compile Include="Formularios\FrmMantenimientoTransporte.Designer.cs">
+      <DependentUpon>FrmMantenimientoTransporte.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,20 +99,23 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\FrmConsultaTransporte.resx">
-      <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMantenimientoCamaraRefrigeracion.resx">
+      <DependentUpon>FrmMantenimientoCamaraRefrigeracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmControlTransporte.resx">
-      <DependentUpon>FrmControlTransporte.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMantenimientoEstadoTransporte.resx">
+      <DependentUpon>FrmMantenimientoEstadoTransporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmGestionViajes.resx">
-      <DependentUpon>FrmGestionViajes.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMantenimientoTipoTransporte.resx">
+      <DependentUpon>FrmMantenimientoTipoTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMantenimientoConductor.resx">
+      <DependentUpon>FrmMantenimientoConductor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTipoTraslado.resx">
       <DependentUpon>FrmTipoTraslado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmTransporteInterno.resx">
-      <DependentUpon>FrmTransporteInterno.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmMantenimientoTransporte.resx">
+      <DependentUpon>FrmMantenimientoTransporte.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
