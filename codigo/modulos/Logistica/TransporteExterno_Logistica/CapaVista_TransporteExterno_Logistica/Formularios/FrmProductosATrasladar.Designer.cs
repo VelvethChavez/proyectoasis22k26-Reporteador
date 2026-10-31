@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class ProductosATrasladar
+    partial class FrmProductosATrasladar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductosATrasladar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductosATrasladar));
             this.LogisticaPnlProductosATrasladar = new System.Windows.Forms.Panel();
-            this.LogisticaLblProductosATrasladar = new System.Windows.Forms.Label();
-            this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
-            this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
-            this.LogisticaDgvProductos = new System.Windows.Forms.DataGridView();
             this.LogisticaPnlBotonesRuta = new System.Windows.Forms.Panel();
             this.LogisticaBtnEliminarProducto = new System.Windows.Forms.Button();
             this.LogisticaBtnGuardarProducto = new System.Windows.Forms.Button();
             this.LogisticaBtnModificarProducto = new System.Windows.Forms.Button();
             this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
+            this.LogisticaLblProductosATrasladar = new System.Windows.Forms.Label();
+            this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
+            this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
+            this.LogisticaDgvProductos = new System.Windows.Forms.DataGridView();
             this.LogisticaPnlProductosATrasladar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductos)).BeginInit();
             this.LogisticaPnlBotonesRuta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // LogisticaPnlProductosATrasladar
@@ -57,51 +57,6 @@
             this.LogisticaPnlProductosATrasladar.Name = "LogisticaPnlProductosATrasladar";
             this.LogisticaPnlProductosATrasladar.Size = new System.Drawing.Size(1102, 636);
             this.LogisticaPnlProductosATrasladar.TabIndex = 0;
-            // 
-            // LogisticaLblProductosATrasladar
-            // 
-            this.LogisticaLblProductosATrasladar.AutoSize = true;
-            this.LogisticaLblProductosATrasladar.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaLblProductosATrasladar.Font = new System.Drawing.Font("Lucida Sans", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaLblProductosATrasladar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblProductosATrasladar.Location = new System.Drawing.Point(47, 35);
-            this.LogisticaLblProductosATrasladar.Name = "LogisticaLblProductosATrasladar";
-            this.LogisticaLblProductosATrasladar.Size = new System.Drawing.Size(482, 38);
-            this.LogisticaLblProductosATrasladar.TabIndex = 24;
-            this.LogisticaLblProductosATrasladar.Text = "PRODUCTOS A TRASLADAR";
-            // 
-            // LogisticaCboNumeroGuia
-            // 
-            this.LogisticaCboNumeroGuia.FormattingEnabled = true;
-            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(776, 145);
-            this.LogisticaCboNumeroGuia.Name = "LogisticaCboNumeroGuia";
-            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(296, 24);
-            this.LogisticaCboNumeroGuia.TabIndex = 26;
-            // 
-            // LogisticaLblSeleccionarTransporte
-            // 
-            this.LogisticaLblSeleccionarTransporte.AutoSize = true;
-            this.LogisticaLblSeleccionarTransporte.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaLblSeleccionarTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(773, 125);
-            this.LogisticaLblSeleccionarTransporte.Name = "LogisticaLblSeleccionarTransporte";
-            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(299, 17);
-            this.LogisticaLblSeleccionarTransporte.TabIndex = 25;
-            this.LogisticaLblSeleccionarTransporte.Text = "Seleccionar Transporte (segun el no. de guía)";
-            // 
-            // LogisticaDgvProductos
-            // 
-            this.LogisticaDgvProductos.AllowUserToAddRows = false;
-            this.LogisticaDgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LogisticaDgvProductos.Location = new System.Drawing.Point(54, 174);
-            this.LogisticaDgvProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaDgvProductos.Name = "LogisticaDgvProductos";
-            this.LogisticaDgvProductos.ReadOnly = true;
-            this.LogisticaDgvProductos.RowHeadersVisible = false;
-            this.LogisticaDgvProductos.RowHeadersWidth = 51;
-            this.LogisticaDgvProductos.RowTemplate.Height = 24;
-            this.LogisticaDgvProductos.Size = new System.Drawing.Size(1018, 366);
-            this.LogisticaDgvProductos.TabIndex = 2;
             // 
             // LogisticaPnlBotonesRuta
             // 
@@ -155,7 +110,52 @@
             this.LogisticaBtnAyuda.TabIndex = 31;
             this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
-            // ProductosATrasladar
+            // LogisticaLblProductosATrasladar
+            // 
+            this.LogisticaLblProductosATrasladar.AutoSize = true;
+            this.LogisticaLblProductosATrasladar.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLblProductosATrasladar.Font = new System.Drawing.Font("Lucida Sans", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblProductosATrasladar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblProductosATrasladar.Location = new System.Drawing.Point(47, 35);
+            this.LogisticaLblProductosATrasladar.Name = "LogisticaLblProductosATrasladar";
+            this.LogisticaLblProductosATrasladar.Size = new System.Drawing.Size(482, 38);
+            this.LogisticaLblProductosATrasladar.TabIndex = 24;
+            this.LogisticaLblProductosATrasladar.Text = "PRODUCTOS A TRASLADAR";
+            // 
+            // LogisticaCboNumeroGuia
+            // 
+            this.LogisticaCboNumeroGuia.FormattingEnabled = true;
+            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(776, 145);
+            this.LogisticaCboNumeroGuia.Name = "LogisticaCboNumeroGuia";
+            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(296, 24);
+            this.LogisticaCboNumeroGuia.TabIndex = 26;
+            // 
+            // LogisticaLblSeleccionarTransporte
+            // 
+            this.LogisticaLblSeleccionarTransporte.AutoSize = true;
+            this.LogisticaLblSeleccionarTransporte.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLblSeleccionarTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(773, 125);
+            this.LogisticaLblSeleccionarTransporte.Name = "LogisticaLblSeleccionarTransporte";
+            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(299, 17);
+            this.LogisticaLblSeleccionarTransporte.TabIndex = 25;
+            this.LogisticaLblSeleccionarTransporte.Text = "Seleccionar Transporte (segun el no. de guía)";
+            // 
+            // LogisticaDgvProductos
+            // 
+            this.LogisticaDgvProductos.AllowUserToAddRows = false;
+            this.LogisticaDgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LogisticaDgvProductos.Location = new System.Drawing.Point(54, 174);
+            this.LogisticaDgvProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaDgvProductos.Name = "LogisticaDgvProductos";
+            this.LogisticaDgvProductos.ReadOnly = true;
+            this.LogisticaDgvProductos.RowHeadersVisible = false;
+            this.LogisticaDgvProductos.RowHeadersWidth = 51;
+            this.LogisticaDgvProductos.RowTemplate.Height = 24;
+            this.LogisticaDgvProductos.Size = new System.Drawing.Size(1018, 366);
+            this.LogisticaDgvProductos.TabIndex = 2;
+            // 
+            // FrmProductosATrasladar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,12 +165,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "ProductosATrasladar";
-            this.Text = "5022 ProductosATrasladar";
+            this.Name = "FrmProductosATrasladar";
+            this.Text = "5022 - ProductosATrasladar";
             this.LogisticaPnlProductosATrasladar.ResumeLayout(false);
             this.LogisticaPnlProductosATrasladar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductos)).EndInit();
             this.LogisticaPnlBotonesRuta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductos)).EndInit();
             this.ResumeLayout(false);
 
         }

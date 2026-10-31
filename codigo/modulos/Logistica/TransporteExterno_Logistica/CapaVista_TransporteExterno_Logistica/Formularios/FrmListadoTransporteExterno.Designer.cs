@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class ListadoTransporteExterno
+    partial class FrmListadoTransporteExterno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListadoTransporteExterno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoTransporteExterno));
             this.LogisticaPnlListadoDeTransportes = new System.Windows.Forms.GroupBox();
             this.LogisticaDvglListadoTransportes = new System.Windows.Forms.DataGridView();
             this.LogisticaPnlListadoTransportes = new System.Windows.Forms.Panel();
@@ -94,7 +94,7 @@
             this.LogisticaPnlPrincipalListadoDeTransporteExterno.Size = new System.Drawing.Size(1103, 633);
             this.LogisticaPnlPrincipalListadoDeTransporteExterno.TabIndex = 25;
             // 
-            // ListadoTransporteExterno
+            // FrmListadoTransporteExterno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,8 +104,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "ListadoTransporteExterno";
-            this.Text = "5025 ListadoTransporteExterno";
+            this.Name = "FrmListadoTransporteExterno";
+            this.Text = "5025 - ListadoTransporteExterno";
             this.LogisticaPnlListadoDeTransportes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDvglListadoTransportes)).EndInit();
             this.LogisticaPnlListadoTransportes.ResumeLayout(false);

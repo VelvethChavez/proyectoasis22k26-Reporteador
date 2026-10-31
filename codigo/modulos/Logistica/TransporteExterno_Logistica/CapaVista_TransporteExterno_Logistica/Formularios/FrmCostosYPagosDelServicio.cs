@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    public partial class ListadoTransporteExterno: Form
+    public partial class FrmCostosYPagosDelServicio : Form
     {
-        public ListadoTransporteExterno()
+        public FrmCostosYPagosDelServicio()
         {
             InitializeComponent();
         }

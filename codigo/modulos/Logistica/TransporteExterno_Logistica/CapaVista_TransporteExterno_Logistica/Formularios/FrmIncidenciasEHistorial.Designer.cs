@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class IncidenciasEHistorial
+    partial class FrmIncidenciasEHistorial
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IncidenciasEHistorial));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIncidenciasEHistorial));
             this.LogisticaLblIncidenciasEHistorial = new System.Windows.Forms.Label();
             this.LogisticaPnlPrincipalCostoYPagosDelServicio = new System.Windows.Forms.Panel();
+            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
             this.LogisticaTbcTransporteExterno = new System.Windows.Forms.TabControl();
             this.LogisticaTabIncidencias = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.LogisticaBtnEliminarIncidencia = new System.Windows.Forms.Button();
+            this.LogisticaBtnModificarIncidencia = new System.Windows.Forms.Button();
+            this.LogisticaBtnGuardarIncidencia = new System.Windows.Forms.Button();
             this.LogisticaCboTipoIncidencia = new System.Windows.Forms.ComboBox();
             this.LogisticaDtpFechaIncidencia = new System.Windows.Forms.DateTimePicker();
             this.LogisticaDgvIncidencias = new System.Windows.Forms.DataGridView();
@@ -52,6 +56,7 @@
             this.LogisticaLblFechaIncidencia = new System.Windows.Forms.Label();
             this.LogisticaLblCodigoIncidencia = new System.Windows.Forms.Label();
             this.LogisticaTabHistorial = new System.Windows.Forms.TabPage();
+            this.LogisticaBtnConsultarHistorial = new System.Windows.Forms.Button();
             this.LogisticaDgvHistorial = new System.Windows.Forms.DataGridView();
             this.LogisticaPnlHistorial = new System.Windows.Forms.Panel();
             this.LogisticaLblTituloHistorial = new System.Windows.Forms.Label();
@@ -65,11 +70,6 @@
             this.LogisticaLblTituloFiltrosHistorial = new System.Windows.Forms.Label();
             this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
             this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
-            this.LogisticaBtnEliminarIncidencia = new System.Windows.Forms.Button();
-            this.LogisticaBtnGuardarIncidencia = new System.Windows.Forms.Button();
-            this.LogisticaBtnModificarIncidencia = new System.Windows.Forms.Button();
-            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
-            this.LogisticaBtnConsultarHistorial = new System.Windows.Forms.Button();
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.SuspendLayout();
             this.LogisticaTbcTransporteExterno.SuspendLayout();
             this.LogisticaTabIncidencias.SuspendLayout();
@@ -107,6 +107,16 @@
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.Name = "LogisticaPnlPrincipalCostoYPagosDelServicio";
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.Size = new System.Drawing.Size(1101, 633);
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.TabIndex = 34;
+            // 
+            // LogisticaBtnAyuda
+            // 
+            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
+            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(644, 19);
+            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
+            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnAyuda.TabIndex = 31;
+            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
             // LogisticaTbcTransporteExterno
             // 
@@ -160,6 +170,36 @@
             this.groupBox3.Size = new System.Drawing.Size(978, 496);
             this.groupBox3.TabIndex = 23;
             this.groupBox3.TabStop = false;
+            // 
+            // LogisticaBtnEliminarIncidencia
+            // 
+            this.LogisticaBtnEliminarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarIncidencia.BackgroundImage")));
+            this.LogisticaBtnEliminarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnEliminarIncidencia.Location = new System.Drawing.Point(806, 136);
+            this.LogisticaBtnEliminarIncidencia.Name = "LogisticaBtnEliminarIncidencia";
+            this.LogisticaBtnEliminarIncidencia.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnEliminarIncidencia.TabIndex = 32;
+            this.LogisticaBtnEliminarIncidencia.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnModificarIncidencia
+            // 
+            this.LogisticaBtnModificarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarIncidencia.BackgroundImage")));
+            this.LogisticaBtnModificarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnModificarIncidencia.Location = new System.Drawing.Point(892, 90);
+            this.LogisticaBtnModificarIncidencia.Name = "LogisticaBtnModificarIncidencia";
+            this.LogisticaBtnModificarIncidencia.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnModificarIncidencia.TabIndex = 33;
+            this.LogisticaBtnModificarIncidencia.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnGuardarIncidencia
+            // 
+            this.LogisticaBtnGuardarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarIncidencia.BackgroundImage")));
+            this.LogisticaBtnGuardarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnGuardarIncidencia.Location = new System.Drawing.Point(806, 55);
+            this.LogisticaBtnGuardarIncidencia.Name = "LogisticaBtnGuardarIncidencia";
+            this.LogisticaBtnGuardarIncidencia.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnGuardarIncidencia.TabIndex = 34;
+            this.LogisticaBtnGuardarIncidencia.UseVisualStyleBackColor = true;
             // 
             // LogisticaCboTipoIncidencia
             // 
@@ -363,6 +403,16 @@
             this.LogisticaTabHistorial.Text = "Historial";
             this.LogisticaTabHistorial.UseVisualStyleBackColor = true;
             // 
+            // LogisticaBtnConsultarHistorial
+            // 
+            this.LogisticaBtnConsultarHistorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnConsultarHistorial.BackgroundImage")));
+            this.LogisticaBtnConsultarHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnConsultarHistorial.Location = new System.Drawing.Point(869, 53);
+            this.LogisticaBtnConsultarHistorial.Name = "LogisticaBtnConsultarHistorial";
+            this.LogisticaBtnConsultarHistorial.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnConsultarHistorial.TabIndex = 34;
+            this.LogisticaBtnConsultarHistorial.UseVisualStyleBackColor = true;
+            // 
             // LogisticaDgvHistorial
             // 
             this.LogisticaDgvHistorial.AllowUserToAddRows = false;
@@ -497,57 +547,7 @@
             this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(233, 24);
             this.LogisticaCboNumeroGuia.TabIndex = 33;
             // 
-            // LogisticaBtnEliminarIncidencia
-            // 
-            this.LogisticaBtnEliminarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarIncidencia.BackgroundImage")));
-            this.LogisticaBtnEliminarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnEliminarIncidencia.Location = new System.Drawing.Point(806, 136);
-            this.LogisticaBtnEliminarIncidencia.Name = "LogisticaBtnEliminarIncidencia";
-            this.LogisticaBtnEliminarIncidencia.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnEliminarIncidencia.TabIndex = 32;
-            this.LogisticaBtnEliminarIncidencia.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnGuardarIncidencia
-            // 
-            this.LogisticaBtnGuardarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarIncidencia.BackgroundImage")));
-            this.LogisticaBtnGuardarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnGuardarIncidencia.Location = new System.Drawing.Point(806, 55);
-            this.LogisticaBtnGuardarIncidencia.Name = "LogisticaBtnGuardarIncidencia";
-            this.LogisticaBtnGuardarIncidencia.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnGuardarIncidencia.TabIndex = 34;
-            this.LogisticaBtnGuardarIncidencia.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnModificarIncidencia
-            // 
-            this.LogisticaBtnModificarIncidencia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarIncidencia.BackgroundImage")));
-            this.LogisticaBtnModificarIncidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnModificarIncidencia.Location = new System.Drawing.Point(892, 90);
-            this.LogisticaBtnModificarIncidencia.Name = "LogisticaBtnModificarIncidencia";
-            this.LogisticaBtnModificarIncidencia.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnModificarIncidencia.TabIndex = 33;
-            this.LogisticaBtnModificarIncidencia.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnAyuda
-            // 
-            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
-            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(644, 19);
-            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
-            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnAyuda.TabIndex = 31;
-            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnConsultarHistorial
-            // 
-            this.LogisticaBtnConsultarHistorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnConsultarHistorial.BackgroundImage")));
-            this.LogisticaBtnConsultarHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnConsultarHistorial.Location = new System.Drawing.Point(869, 53);
-            this.LogisticaBtnConsultarHistorial.Name = "LogisticaBtnConsultarHistorial";
-            this.LogisticaBtnConsultarHistorial.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnConsultarHistorial.TabIndex = 34;
-            this.LogisticaBtnConsultarHistorial.UseVisualStyleBackColor = true;
-            // 
-            // IncidenciasEHistorial
+            // FrmIncidenciasEHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -558,8 +558,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "IncidenciasEHistorial";
-            this.Text = "5024 IncidenciasEHistorial";
+            this.Name = "FrmIncidenciasEHistorial";
+            this.Text = "5024 - IncidenciasEHistorial";
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.ResumeLayout(false);
             this.LogisticaPnlPrincipalCostoYPagosDelServicio.PerformLayout();
             this.LogisticaTbcTransporteExterno.ResumeLayout(false);

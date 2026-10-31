@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class CostosYPagosDelServicio
+    partial class FrmCostosYPagosDelServicio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CostosYPagosDelServicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCostosYPagosDelServicio));
             this.LogisticaLblCostoYPagos = new System.Windows.Forms.Label();
             this.LogisticaPnlCostoYPagosDelServicio = new System.Windows.Forms.Panel();
+            this.LogisticaPnlBotonesRuta = new System.Windows.Forms.Panel();
+            this.LogisticaBtnEliminarCosto = new System.Windows.Forms.Button();
+            this.LogisticaBtnGuardarCosto = new System.Windows.Forms.Button();
+            this.LogisticaBtnModificarCosto = new System.Windows.Forms.Button();
+            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
             this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
             this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
             this.LogisticaPnlCostosServicio = new System.Windows.Forms.GroupBox();
@@ -46,15 +51,10 @@
             this.LogisticaLblTituloCostoServicio = new System.Windows.Forms.Label();
             this.LogisticaLblMoneda = new System.Windows.Forms.Label();
             this.LogisticaLblTarifa = new System.Windows.Forms.Label();
-            this.LogisticaPnlBotonesRuta = new System.Windows.Forms.Panel();
-            this.LogisticaBtnEliminarCosto = new System.Windows.Forms.Button();
-            this.LogisticaBtnGuardarCosto = new System.Windows.Forms.Button();
-            this.LogisticaBtnModificarCosto = new System.Windows.Forms.Button();
-            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
             this.LogisticaPnlCostoYPagosDelServicio.SuspendLayout();
+            this.LogisticaPnlBotonesRuta.SuspendLayout();
             this.LogisticaPnlCostosServicio.SuspendLayout();
             this.LogisticaPnlEncabezadoCostosServicio.SuspendLayout();
-            this.LogisticaPnlBotonesRuta.SuspendLayout();
             this.SuspendLayout();
             // 
             // LogisticaLblCostoYPagos
@@ -82,6 +82,58 @@
             this.LogisticaPnlCostoYPagosDelServicio.Name = "LogisticaPnlCostoYPagosDelServicio";
             this.LogisticaPnlCostoYPagosDelServicio.Size = new System.Drawing.Size(1100, 632);
             this.LogisticaPnlCostoYPagosDelServicio.TabIndex = 26;
+            // 
+            // LogisticaPnlBotonesRuta
+            // 
+            this.LogisticaPnlBotonesRuta.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnEliminarCosto);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnGuardarCosto);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnModificarCosto);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnAyuda);
+            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(54, 159);
+            this.LogisticaPnlBotonesRuta.Name = "LogisticaPnlBotonesRuta";
+            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(672, 90);
+            this.LogisticaPnlBotonesRuta.TabIndex = 37;
+            // 
+            // LogisticaBtnEliminarCosto
+            // 
+            this.LogisticaBtnEliminarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarCosto.BackgroundImage")));
+            this.LogisticaBtnEliminarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnEliminarCosto.Location = new System.Drawing.Point(172, 3);
+            this.LogisticaBtnEliminarCosto.Name = "LogisticaBtnEliminarCosto";
+            this.LogisticaBtnEliminarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnEliminarCosto.TabIndex = 32;
+            this.LogisticaBtnEliminarCosto.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnGuardarCosto
+            // 
+            this.LogisticaBtnGuardarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarCosto.BackgroundImage")));
+            this.LogisticaBtnGuardarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnGuardarCosto.Location = new System.Drawing.Point(3, 3);
+            this.LogisticaBtnGuardarCosto.Name = "LogisticaBtnGuardarCosto";
+            this.LogisticaBtnGuardarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnGuardarCosto.TabIndex = 34;
+            this.LogisticaBtnGuardarCosto.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnModificarCosto
+            // 
+            this.LogisticaBtnModificarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarCosto.BackgroundImage")));
+            this.LogisticaBtnModificarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnModificarCosto.Location = new System.Drawing.Point(86, 3);
+            this.LogisticaBtnModificarCosto.Name = "LogisticaBtnModificarCosto";
+            this.LogisticaBtnModificarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnModificarCosto.TabIndex = 33;
+            this.LogisticaBtnModificarCosto.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnAyuda
+            // 
+            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
+            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(589, 3);
+            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
+            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnAyuda.TabIndex = 31;
+            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
             // LogisticaLblSeleccionarTransporte
             // 
@@ -251,59 +303,7 @@
             this.LogisticaLblTarifa.TabIndex = 0;
             this.LogisticaLblTarifa.Text = "Tarifa:";
             // 
-            // LogisticaPnlBotonesRuta
-            // 
-            this.LogisticaPnlBotonesRuta.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnEliminarCosto);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnGuardarCosto);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnModificarCosto);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnAyuda);
-            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(54, 159);
-            this.LogisticaPnlBotonesRuta.Name = "LogisticaPnlBotonesRuta";
-            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(672, 90);
-            this.LogisticaPnlBotonesRuta.TabIndex = 37;
-            // 
-            // LogisticaBtnEliminarCosto
-            // 
-            this.LogisticaBtnEliminarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarCosto.BackgroundImage")));
-            this.LogisticaBtnEliminarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnEliminarCosto.Location = new System.Drawing.Point(172, 3);
-            this.LogisticaBtnEliminarCosto.Name = "LogisticaBtnEliminarCosto";
-            this.LogisticaBtnEliminarCosto.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnEliminarCosto.TabIndex = 32;
-            this.LogisticaBtnEliminarCosto.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnGuardarCosto
-            // 
-            this.LogisticaBtnGuardarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarCosto.BackgroundImage")));
-            this.LogisticaBtnGuardarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnGuardarCosto.Location = new System.Drawing.Point(3, 3);
-            this.LogisticaBtnGuardarCosto.Name = "LogisticaBtnGuardarCosto";
-            this.LogisticaBtnGuardarCosto.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnGuardarCosto.TabIndex = 34;
-            this.LogisticaBtnGuardarCosto.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnModificarCosto
-            // 
-            this.LogisticaBtnModificarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarCosto.BackgroundImage")));
-            this.LogisticaBtnModificarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnModificarCosto.Location = new System.Drawing.Point(86, 3);
-            this.LogisticaBtnModificarCosto.Name = "LogisticaBtnModificarCosto";
-            this.LogisticaBtnModificarCosto.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnModificarCosto.TabIndex = 33;
-            this.LogisticaBtnModificarCosto.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnAyuda
-            // 
-            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
-            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(589, 3);
-            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
-            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnAyuda.TabIndex = 31;
-            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
-            // 
-            // CostosYPagosDelServicio
+            // FrmCostosYPagosDelServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -313,15 +313,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "CostosYPagosDelServicio";
-            this.Text = "5023 CostosYPagosDelServicio";
+            this.Name = "FrmCostosYPagosDelServicio";
+            this.Text = "5023 - CostosYPagosDelServicio";
             this.LogisticaPnlCostoYPagosDelServicio.ResumeLayout(false);
             this.LogisticaPnlCostoYPagosDelServicio.PerformLayout();
+            this.LogisticaPnlBotonesRuta.ResumeLayout(false);
             this.LogisticaPnlCostosServicio.ResumeLayout(false);
             this.LogisticaPnlCostosServicio.PerformLayout();
             this.LogisticaPnlEncabezadoCostosServicio.ResumeLayout(false);
             this.LogisticaPnlEncabezadoCostosServicio.PerformLayout();
-            this.LogisticaPnlBotonesRuta.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class RegistroTransporteExterno
+    partial class FrmRegistroTransporteExterno
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroTransporteExterno));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroTransporteExterno));
             this.LogisticaPnlInfoTransporteExterno = new System.Windows.Forms.GroupBox();
             this.LogisticaPnlEncabezadoInfTransporteExterno = new System.Windows.Forms.Panel();
             this.LogisticaLblTituloTransporteExterno = new System.Windows.Forms.Label();
@@ -68,13 +68,13 @@
             this.LogisticaLblFechaContratacion = new System.Windows.Forms.Label();
             this.LogisticaLblRegistroTransporte = new System.Windows.Forms.Label();
             this.LogisticaPnlRegistroTransporte = new System.Windows.Forms.Panel();
-            this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
-            this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
             this.LogisticaPnlBotonesRegistro = new System.Windows.Forms.Panel();
             this.LogisticaBtnEliminarRegistro = new System.Windows.Forms.Button();
             this.LogisticaBtnGuardarRegistro = new System.Windows.Forms.Button();
             this.LogisticaBtnModificarRegitro = new System.Windows.Forms.Button();
             this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
+            this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
+            this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
             this.LogisticaPnlInfoTransporteExterno.SuspendLayout();
             this.LogisticaPnlEncabezadoInfTransporteExterno.SuspendLayout();
             this.LogisticaPnlVehiculoConductor.SuspendLayout();
@@ -538,25 +538,6 @@
             this.LogisticaPnlRegistroTransporte.Size = new System.Drawing.Size(1106, 640);
             this.LogisticaPnlRegistroTransporte.TabIndex = 23;
             // 
-            // LogisticaLblSeleccionarTransporte
-            // 
-            this.LogisticaLblSeleccionarTransporte.AutoSize = true;
-            this.LogisticaLblSeleccionarTransporte.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaLblSeleccionarTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(745, 82);
-            this.LogisticaLblSeleccionarTransporte.Name = "LogisticaLblSeleccionarTransporte";
-            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(299, 17);
-            this.LogisticaLblSeleccionarTransporte.TabIndex = 26;
-            this.LogisticaLblSeleccionarTransporte.Text = "Seleccionar Transporte (segun el no. de guía)";
-            // 
-            // LogisticaCboNumeroGuia
-            // 
-            this.LogisticaCboNumeroGuia.FormattingEnabled = true;
-            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(810, 102);
-            this.LogisticaCboNumeroGuia.Name = "LogisticaCboNumeroGuia";
-            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(233, 24);
-            this.LogisticaCboNumeroGuia.TabIndex = 28;
-            // 
             // LogisticaPnlBotonesRegistro
             // 
             this.LogisticaPnlBotonesRegistro.BackColor = System.Drawing.Color.Transparent;
@@ -609,7 +590,26 @@
             this.LogisticaBtnAyuda.TabIndex = 31;
             this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
-            // RegistroTransporteExterno
+            // LogisticaLblSeleccionarTransporte
+            // 
+            this.LogisticaLblSeleccionarTransporte.AutoSize = true;
+            this.LogisticaLblSeleccionarTransporte.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLblSeleccionarTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(745, 82);
+            this.LogisticaLblSeleccionarTransporte.Name = "LogisticaLblSeleccionarTransporte";
+            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(299, 17);
+            this.LogisticaLblSeleccionarTransporte.TabIndex = 26;
+            this.LogisticaLblSeleccionarTransporte.Text = "Seleccionar Transporte (segun el no. de guía)";
+            // 
+            // LogisticaCboNumeroGuia
+            // 
+            this.LogisticaCboNumeroGuia.FormattingEnabled = true;
+            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(810, 102);
+            this.LogisticaCboNumeroGuia.Name = "LogisticaCboNumeroGuia";
+            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(233, 24);
+            this.LogisticaCboNumeroGuia.TabIndex = 28;
+            // 
+            // FrmRegistroTransporteExterno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -619,8 +619,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "RegistroTransporteExterno";
-            this.Text = "5020 RegistroTransporteExterno";
+            this.Name = "FrmRegistroTransporteExterno";
+            this.Text = "5020 - RegistroTransporteExterno";
             this.LogisticaPnlInfoTransporteExterno.ResumeLayout(false);
             this.LogisticaPnlInfoTransporteExterno.PerformLayout();
             this.LogisticaPnlEncabezadoInfTransporteExterno.ResumeLayout(false);

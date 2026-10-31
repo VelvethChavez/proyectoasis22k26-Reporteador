@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    partial class RutaYSeguimiento
+    partial class FrmRutaYSeguimiento
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RutaYSeguimiento));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRutaYSeguimiento));
             this.LogisticaPnlRutaYSeguimiento = new System.Windows.Forms.Panel();
+            this.LogisticaPnlBotonesRuta = new System.Windows.Forms.Panel();
+            this.LogisticaBtnEliminarRuta = new System.Windows.Forms.Button();
+            this.LogisticaBtnGuardarRuta = new System.Windows.Forms.Button();
+            this.LogisticaBtnModificarRuta = new System.Windows.Forms.Button();
+            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
             this.LogisticaLblRutaSeguimiento = new System.Windows.Forms.Label();
             this.LogisticaCboNumeroGuia = new System.Windows.Forms.ComboBox();
             this.LogisticaLblSeleccionarTransporte = new System.Windows.Forms.Label();
             this.LogisticaPnlUbicacionActual = new System.Windows.Forms.GroupBox();
+            this.LogisticaBtnActualizarUbicacion = new System.Windows.Forms.Button();
             this.LogisticaLblValorUltimaActualizacion = new System.Windows.Forms.Label();
             this.LogisticaLblValorEstadoUbicacion = new System.Windows.Forms.Label();
             this.LogisticaLblValorUbicacion = new System.Windows.Forms.Label();
@@ -54,18 +60,12 @@
             this.LogisticaCboDestino = new System.Windows.Forms.ComboBox();
             this.LogisticaLblDireccionOrigen = new System.Windows.Forms.Label();
             this.LogisticaLblOrigen = new System.Windows.Forms.Label();
-            this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
-            this.LogisticaBtnEliminarRuta = new System.Windows.Forms.Button();
-            this.LogisticaBtnModificarRuta = new System.Windows.Forms.Button();
-            this.LogisticaBtnGuardarRuta = new System.Windows.Forms.Button();
-            this.LogisticaBtnActualizarUbicacion = new System.Windows.Forms.Button();
-            this.LogisticaPnlBotonesRuta = new System.Windows.Forms.Panel();
             this.LogisticaPnlRutaYSeguimiento.SuspendLayout();
+            this.LogisticaPnlBotonesRuta.SuspendLayout();
             this.LogisticaPnlUbicacionActual.SuspendLayout();
             this.LogisticaPnlEncabezadoUbicacionActual.SuspendLayout();
             this.LogisticaPnlOrigenDestino.SuspendLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.SuspendLayout();
-            this.LogisticaPnlBotonesRuta.SuspendLayout();
             this.SuspendLayout();
             // 
             // LogisticaPnlRutaYSeguimiento
@@ -82,6 +82,58 @@
             this.LogisticaPnlRutaYSeguimiento.Name = "LogisticaPnlRutaYSeguimiento";
             this.LogisticaPnlRutaYSeguimiento.Size = new System.Drawing.Size(1104, 634);
             this.LogisticaPnlRutaYSeguimiento.TabIndex = 0;
+            // 
+            // LogisticaPnlBotonesRuta
+            // 
+            this.LogisticaPnlBotonesRuta.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnEliminarRuta);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnGuardarRuta);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnModificarRuta);
+            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnAyuda);
+            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(49, 50);
+            this.LogisticaPnlBotonesRuta.Name = "LogisticaPnlBotonesRuta";
+            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(672, 90);
+            this.LogisticaPnlBotonesRuta.TabIndex = 35;
+            // 
+            // LogisticaBtnEliminarRuta
+            // 
+            this.LogisticaBtnEliminarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarRuta.BackgroundImage")));
+            this.LogisticaBtnEliminarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnEliminarRuta.Location = new System.Drawing.Point(172, 3);
+            this.LogisticaBtnEliminarRuta.Name = "LogisticaBtnEliminarRuta";
+            this.LogisticaBtnEliminarRuta.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnEliminarRuta.TabIndex = 32;
+            this.LogisticaBtnEliminarRuta.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnGuardarRuta
+            // 
+            this.LogisticaBtnGuardarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarRuta.BackgroundImage")));
+            this.LogisticaBtnGuardarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnGuardarRuta.Location = new System.Drawing.Point(3, 3);
+            this.LogisticaBtnGuardarRuta.Name = "LogisticaBtnGuardarRuta";
+            this.LogisticaBtnGuardarRuta.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnGuardarRuta.TabIndex = 34;
+            this.LogisticaBtnGuardarRuta.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnModificarRuta
+            // 
+            this.LogisticaBtnModificarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarRuta.BackgroundImage")));
+            this.LogisticaBtnModificarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnModificarRuta.Location = new System.Drawing.Point(86, 3);
+            this.LogisticaBtnModificarRuta.Name = "LogisticaBtnModificarRuta";
+            this.LogisticaBtnModificarRuta.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnModificarRuta.TabIndex = 33;
+            this.LogisticaBtnModificarRuta.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaBtnAyuda
+            // 
+            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
+            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(589, 3);
+            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
+            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnAyuda.TabIndex = 31;
+            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
             // LogisticaLblRutaSeguimiento
             // 
@@ -133,6 +185,16 @@
             this.LogisticaPnlUbicacionActual.Size = new System.Drawing.Size(995, 314);
             this.LogisticaPnlUbicacionActual.TabIndex = 25;
             this.LogisticaPnlUbicacionActual.TabStop = false;
+            // 
+            // LogisticaBtnActualizarUbicacion
+            // 
+            this.LogisticaBtnActualizarUbicacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnActualizarUbicacion.BackgroundImage")));
+            this.LogisticaBtnActualizarUbicacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaBtnActualizarUbicacion.Location = new System.Drawing.Point(891, 214);
+            this.LogisticaBtnActualizarUbicacion.Name = "LogisticaBtnActualizarUbicacion";
+            this.LogisticaBtnActualizarUbicacion.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnActualizarUbicacion.TabIndex = 38;
+            this.LogisticaBtnActualizarUbicacion.UseVisualStyleBackColor = true;
             // 
             // LogisticaLblValorUltimaActualizacion
             // 
@@ -349,69 +411,7 @@
             this.LogisticaLblOrigen.TabIndex = 0;
             this.LogisticaLblOrigen.Text = "Origen:";
             // 
-            // LogisticaBtnAyuda
-            // 
-            this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
-            this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(589, 3);
-            this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
-            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnAyuda.TabIndex = 31;
-            this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnEliminarRuta
-            // 
-            this.LogisticaBtnEliminarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarRuta.BackgroundImage")));
-            this.LogisticaBtnEliminarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnEliminarRuta.Location = new System.Drawing.Point(172, 3);
-            this.LogisticaBtnEliminarRuta.Name = "LogisticaBtnEliminarRuta";
-            this.LogisticaBtnEliminarRuta.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnEliminarRuta.TabIndex = 32;
-            this.LogisticaBtnEliminarRuta.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnModificarRuta
-            // 
-            this.LogisticaBtnModificarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarRuta.BackgroundImage")));
-            this.LogisticaBtnModificarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnModificarRuta.Location = new System.Drawing.Point(86, 3);
-            this.LogisticaBtnModificarRuta.Name = "LogisticaBtnModificarRuta";
-            this.LogisticaBtnModificarRuta.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnModificarRuta.TabIndex = 33;
-            this.LogisticaBtnModificarRuta.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnGuardarRuta
-            // 
-            this.LogisticaBtnGuardarRuta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarRuta.BackgroundImage")));
-            this.LogisticaBtnGuardarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnGuardarRuta.Location = new System.Drawing.Point(3, 3);
-            this.LogisticaBtnGuardarRuta.Name = "LogisticaBtnGuardarRuta";
-            this.LogisticaBtnGuardarRuta.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnGuardarRuta.TabIndex = 34;
-            this.LogisticaBtnGuardarRuta.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaBtnActualizarUbicacion
-            // 
-            this.LogisticaBtnActualizarUbicacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnActualizarUbicacion.BackgroundImage")));
-            this.LogisticaBtnActualizarUbicacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnActualizarUbicacion.Location = new System.Drawing.Point(891, 214);
-            this.LogisticaBtnActualizarUbicacion.Name = "LogisticaBtnActualizarUbicacion";
-            this.LogisticaBtnActualizarUbicacion.Size = new System.Drawing.Size(80, 81);
-            this.LogisticaBtnActualizarUbicacion.TabIndex = 38;
-            this.LogisticaBtnActualizarUbicacion.UseVisualStyleBackColor = true;
-            // 
-            // LogisticaPnlBotonesRuta
-            // 
-            this.LogisticaPnlBotonesRuta.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnEliminarRuta);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnGuardarRuta);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnModificarRuta);
-            this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnAyuda);
-            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(49, 50);
-            this.LogisticaPnlBotonesRuta.Name = "LogisticaPnlBotonesRuta";
-            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(672, 90);
-            this.LogisticaPnlBotonesRuta.TabIndex = 35;
-            // 
-            // RutaYSeguimiento
+            // FrmRutaYSeguimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -421,10 +421,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "RutaYSeguimiento";
-            this.Text = "5021 RutaYSeguimiento";
+            this.Name = "FrmRutaYSeguimiento";
+            this.Text = "5021 - RutaYSeguimiento";
             this.LogisticaPnlRutaYSeguimiento.ResumeLayout(false);
             this.LogisticaPnlRutaYSeguimiento.PerformLayout();
+            this.LogisticaPnlBotonesRuta.ResumeLayout(false);
             this.LogisticaPnlUbicacionActual.ResumeLayout(false);
             this.LogisticaPnlUbicacionActual.PerformLayout();
             this.LogisticaPnlEncabezadoUbicacionActual.ResumeLayout(false);
@@ -433,7 +434,6 @@
             this.LogisticaPnlOrigenDestino.PerformLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.ResumeLayout(false);
             this.LogisticaPnlEncabezadoOrigenDestino.PerformLayout();
-            this.LogisticaPnlBotonesRuta.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
