@@ -62,7 +62,7 @@
             this.LogisticaCboSucursal.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.LogisticaCboSucursal.FormattingEnabled = true;
             this.LogisticaCboSucursal.Location = new System.Drawing.Point(85, 158);
-            this.LogisticaCboSucursal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaCboSucursal.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaCboSucursal.Name = "LogisticaCboSucursal";
             this.LogisticaCboSucursal.Size = new System.Drawing.Size(346, 27);
             this.LogisticaCboSucursal.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.LogisticaCboMesCierre.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.LogisticaCboMesCierre.FormattingEnabled = true;
             this.LogisticaCboMesCierre.Location = new System.Drawing.Point(86, 249);
-            this.LogisticaCboMesCierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaCboMesCierre.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaCboMesCierre.Name = "LogisticaCboMesCierre";
             this.LogisticaCboMesCierre.Size = new System.Drawing.Size(162, 27);
             this.LogisticaCboMesCierre.TabIndex = 5;
@@ -82,7 +82,7 @@
             this.LogisticaCboAñoCierre.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.LogisticaCboAñoCierre.FormattingEnabled = true;
             this.LogisticaCboAñoCierre.Location = new System.Drawing.Point(283, 249);
-            this.LogisticaCboAñoCierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaCboAñoCierre.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaCboAñoCierre.Name = "LogisticaCboAñoCierre";
             this.LogisticaCboAñoCierre.Size = new System.Drawing.Size(148, 27);
             this.LogisticaCboAñoCierre.TabIndex = 6;
@@ -112,7 +112,7 @@
             this.LogisticaPnlCierreInventario.Controls.Add(this.LogisticaLblTituloCierreInventario);
             this.LogisticaPnlCierreInventario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LogisticaPnlCierreInventario.Location = new System.Drawing.Point(0, 0);
-            this.LogisticaPnlCierreInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaPnlCierreInventario.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaPnlCierreInventario.Name = "LogisticaPnlCierreInventario";
             this.LogisticaPnlCierreInventario.Size = new System.Drawing.Size(856, 596);
             this.LogisticaPnlCierreInventario.TabIndex = 24;
@@ -123,7 +123,7 @@
             this.LogisticaBtnConfirmarCierre.FlatAppearance.BorderSize = 0;
             this.LogisticaBtnConfirmarCierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogisticaBtnConfirmarCierre.Location = new System.Drawing.Point(724, 468);
-            this.LogisticaBtnConfirmarCierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnConfirmarCierre.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaBtnConfirmarCierre.Name = "LogisticaBtnConfirmarCierre";
             this.LogisticaBtnConfirmarCierre.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnConfirmarCierre.TabIndex = 23;
@@ -133,7 +133,7 @@
             // LogisticaBtnValidarPeriodo
             // 
             this.LogisticaBtnValidarPeriodo.Location = new System.Drawing.Point(283, 288);
-            this.LogisticaBtnValidarPeriodo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnValidarPeriodo.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaBtnValidarPeriodo.Name = "LogisticaBtnValidarPeriodo";
             this.LogisticaBtnValidarPeriodo.Size = new System.Drawing.Size(69, 54);
             this.LogisticaBtnValidarPeriodo.TabIndex = 19;
@@ -143,7 +143,7 @@
             // LogisticaBtnLimpiar
             // 
             this.LogisticaBtnLimpiar.Location = new System.Drawing.Point(364, 288);
-            this.LogisticaBtnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaBtnLimpiar.Name = "LogisticaBtnLimpiar";
             this.LogisticaBtnLimpiar.Size = new System.Drawing.Size(45, 54);
             this.LogisticaBtnLimpiar.TabIndex = 20;
@@ -157,12 +157,12 @@
             this.LogisticaBtnConsultarCierre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogisticaBtnConsultarCierre.Image = global::CapaVista_CierreInventario_Logistica.Properties.Resources.btn_consultar;
             this.LogisticaBtnConsultarCierre.Location = new System.Drawing.Point(724, 371);
-            this.LogisticaBtnConsultarCierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnConsultarCierre.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaBtnConsultarCierre.Name = "LogisticaBtnConsultarCierre";
             this.LogisticaBtnConsultarCierre.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnConsultarCierre.TabIndex = 21;
             this.LogisticaBtnConsultarCierre.UseVisualStyleBackColor = true;
-            this.LogisticaBtnConsultarCierre.Click += new System.EventHandler(this.button3_Click);
+            this.LogisticaBtnConsultarCierre.Click += new System.EventHandler(this.LogisticaBtnConsultarCierre_Click_1);
             // 
             // LogisticaLblDetalleInventario
             // 
@@ -245,7 +245,7 @@
             // 
             this.LogisticaDgvDetalleCierre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LogisticaDgvDetalleCierre.Location = new System.Drawing.Point(85, 371);
-            this.LogisticaDgvDetalleCierre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaDgvDetalleCierre.Margin = new System.Windows.Forms.Padding(2);
             this.LogisticaDgvDetalleCierre.Name = "LogisticaDgvDetalleCierre";
             this.LogisticaDgvDetalleCierre.RowHeadersWidth = 51;
             this.LogisticaDgvDetalleCierre.RowTemplate.Height = 24;
@@ -377,7 +377,7 @@
             this.Controls.Add(this.LogisticaPnlCierreInventario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmCierreInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
