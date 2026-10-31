@@ -10,46 +10,46 @@ using System.Windows.Forms;
 
 namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    public partial class TransporteExterno : Form
+    public partial class FrmTransporteExterno : Form
     {
-        public TransporteExterno()
+        public FrmTransporteExterno()
         {
             InitializeComponent();
         }
 
         private void LogisticaBtnRutaSeguimiento_Click(object sender, EventArgs e)
         {
-            RutaYSeguimiento frmRutaSeguimiento = new RutaYSeguimiento();
+            FrmRutaYSeguimiento frmRutaSeguimiento = new FrmRutaYSeguimiento();
             frmRutaSeguimiento.ShowDialog();
         }
 
         private void LogisticaBtnProductosCarga_Click(object sender, EventArgs e)
         {
-            ProductosATrasladar frmProductoTrasladado = new ProductosATrasladar();
+            FrmProductosATrasladar frmProductoTrasladado = new FrmProductosATrasladar();
             frmProductoTrasladado.ShowDialog();
         }
 
         private void LogisticaBtnCostosPagos_Click(object sender, EventArgs e)
         {
-            CostosYPagosDelServicio costosYPagosDelServicio = new CostosYPagosDelServicio();
+            FrmCostosYPagosDelServicio costosYPagosDelServicio = new FrmCostosYPagosDelServicio();
             costosYPagosDelServicio.ShowDialog();
         }
 
         private void LogisticaBtnIncidenciasEHistorial_Click(object sender, EventArgs e)
         {
-            IncidenciasEHistorial frmIncidenciasEHistorial = new IncidenciasEHistorial();
+            FrmIncidenciasEHistorial frmIncidenciasEHistorial = new FrmIncidenciasEHistorial();
             frmIncidenciasEHistorial.ShowDialog();
         }
 
         private void LogisticaBtnListadoTransporteExterno_Click(object sender, EventArgs e)
         {
-            ListadoTransporteExterno frmListadoTransporteExterno = new ListadoTransporteExterno();
+            FrmListadoTransporteExterno frmListadoTransporteExterno = new FrmListadoTransporteExterno();
             frmListadoTransporteExterno.ShowDialog();
         }
 
         private void LogisticaBtnRegistroTransporte_Click_1(object sender, EventArgs e)
         {
-            RegistroTransporteExterno frmTransporteExterno = new RegistroTransporteExterno();
+            FrmRegistroTransporteExterno frmTransporteExterno = new FrmRegistroTransporteExterno();
             frmTransporteExterno.ShowDialog();
         }
     }

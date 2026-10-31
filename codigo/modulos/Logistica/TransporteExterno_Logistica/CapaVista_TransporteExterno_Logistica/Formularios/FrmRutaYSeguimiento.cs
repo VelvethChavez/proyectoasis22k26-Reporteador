@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista_TransporteExterno_Logistica.Formularios
 {
-    public partial class IncidenciasEHistorial : Form
+    public partial class FrmRutaYSeguimiento : Form
     {
-        public IncidenciasEHistorial()
+        public FrmRutaYSeguimiento()
         {
             InitializeComponent();
         }
