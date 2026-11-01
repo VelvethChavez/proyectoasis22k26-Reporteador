@@ -12,6 +12,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< Updated upstream
+=======
+
+using CapaVista_Logistica;
+//using CapaVista_Ventas;
+
+>>>>>>> Stashed changes
 
 /*
  * ============================================================
