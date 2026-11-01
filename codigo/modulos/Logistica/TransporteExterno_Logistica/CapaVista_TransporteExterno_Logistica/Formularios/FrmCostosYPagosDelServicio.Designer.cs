@@ -63,9 +63,10 @@
             this.LogisticaLblCostoYPagos.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblCostoYPagos.Font = new System.Drawing.Font("Lucida Sans", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblCostoYPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblCostoYPagos.Location = new System.Drawing.Point(47, 21);
+            this.LogisticaLblCostoYPagos.Location = new System.Drawing.Point(35, 17);
+            this.LogisticaLblCostoYPagos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblCostoYPagos.Name = "LogisticaLblCostoYPagos";
-            this.LogisticaLblCostoYPagos.Size = new System.Drawing.Size(542, 38);
+            this.LogisticaLblCostoYPagos.Size = new System.Drawing.Size(439, 32);
             this.LogisticaLblCostoYPagos.TabIndex = 25;
             this.LogisticaLblCostoYPagos.Text = "COSTO Y PAGOS DEL SERVICIO";
             // 
@@ -79,8 +80,9 @@
             this.LogisticaPnlCostoYPagosDelServicio.Controls.Add(this.LogisticaPnlCostosServicio);
             this.LogisticaPnlCostoYPagosDelServicio.Controls.Add(this.LogisticaLblCostoYPagos);
             this.LogisticaPnlCostoYPagosDelServicio.Location = new System.Drawing.Point(2, 1);
+            this.LogisticaPnlCostoYPagosDelServicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaPnlCostoYPagosDelServicio.Name = "LogisticaPnlCostoYPagosDelServicio";
-            this.LogisticaPnlCostoYPagosDelServicio.Size = new System.Drawing.Size(1100, 632);
+            this.LogisticaPnlCostoYPagosDelServicio.Size = new System.Drawing.Size(825, 514);
             this.LogisticaPnlCostoYPagosDelServicio.TabIndex = 26;
             // 
             // LogisticaPnlBotonesRuta
@@ -90,18 +92,20 @@
             this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnGuardarCosto);
             this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnModificarCosto);
             this.LogisticaPnlBotonesRuta.Controls.Add(this.LogisticaBtnAyuda);
-            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(54, 159);
+            this.LogisticaPnlBotonesRuta.Location = new System.Drawing.Point(40, 129);
+            this.LogisticaPnlBotonesRuta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaPnlBotonesRuta.Name = "LogisticaPnlBotonesRuta";
-            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(672, 90);
+            this.LogisticaPnlBotonesRuta.Size = new System.Drawing.Size(504, 73);
             this.LogisticaPnlBotonesRuta.TabIndex = 37;
             // 
             // LogisticaBtnEliminarCosto
             // 
             this.LogisticaBtnEliminarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnEliminarCosto.BackgroundImage")));
             this.LogisticaBtnEliminarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnEliminarCosto.Location = new System.Drawing.Point(172, 3);
+            this.LogisticaBtnEliminarCosto.Location = new System.Drawing.Point(129, 2);
+            this.LogisticaBtnEliminarCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaBtnEliminarCosto.Name = "LogisticaBtnEliminarCosto";
-            this.LogisticaBtnEliminarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnEliminarCosto.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnEliminarCosto.TabIndex = 32;
             this.LogisticaBtnEliminarCosto.UseVisualStyleBackColor = true;
             // 
@@ -109,9 +113,10 @@
             // 
             this.LogisticaBtnGuardarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnGuardarCosto.BackgroundImage")));
             this.LogisticaBtnGuardarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnGuardarCosto.Location = new System.Drawing.Point(3, 3);
+            this.LogisticaBtnGuardarCosto.Location = new System.Drawing.Point(2, 2);
+            this.LogisticaBtnGuardarCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaBtnGuardarCosto.Name = "LogisticaBtnGuardarCosto";
-            this.LogisticaBtnGuardarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnGuardarCosto.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnGuardarCosto.TabIndex = 34;
             this.LogisticaBtnGuardarCosto.UseVisualStyleBackColor = true;
             // 
@@ -119,9 +124,10 @@
             // 
             this.LogisticaBtnModificarCosto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnModificarCosto.BackgroundImage")));
             this.LogisticaBtnModificarCosto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnModificarCosto.Location = new System.Drawing.Point(86, 3);
+            this.LogisticaBtnModificarCosto.Location = new System.Drawing.Point(64, 2);
+            this.LogisticaBtnModificarCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaBtnModificarCosto.Name = "LogisticaBtnModificarCosto";
-            this.LogisticaBtnModificarCosto.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnModificarCosto.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnModificarCosto.TabIndex = 33;
             this.LogisticaBtnModificarCosto.UseVisualStyleBackColor = true;
             // 
@@ -129,9 +135,10 @@
             // 
             this.LogisticaBtnAyuda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LogisticaBtnAyuda.BackgroundImage")));
             this.LogisticaBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(589, 3);
+            this.LogisticaBtnAyuda.Location = new System.Drawing.Point(442, 2);
+            this.LogisticaBtnAyuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaBtnAyuda.Name = "LogisticaBtnAyuda";
-            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(80, 81);
+            this.LogisticaBtnAyuda.Size = new System.Drawing.Size(60, 66);
             this.LogisticaBtnAyuda.TabIndex = 31;
             this.LogisticaBtnAyuda.UseVisualStyleBackColor = true;
             // 
@@ -140,18 +147,20 @@
             this.LogisticaLblSeleccionarTransporte.AutoSize = true;
             this.LogisticaLblSeleccionarTransporte.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblSeleccionarTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(753, 205);
+            this.LogisticaLblSeleccionarTransporte.Location = new System.Drawing.Point(565, 167);
+            this.LogisticaLblSeleccionarTransporte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblSeleccionarTransporte.Name = "LogisticaLblSeleccionarTransporte";
-            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(299, 17);
+            this.LogisticaLblSeleccionarTransporte.Size = new System.Drawing.Size(224, 13);
             this.LogisticaLblSeleccionarTransporte.TabIndex = 30;
             this.LogisticaLblSeleccionarTransporte.Text = "Seleccionar Transporte (segun el no. de guía)";
             // 
             // LogisticaCboNumeroGuia
             // 
             this.LogisticaCboNumeroGuia.FormattingEnabled = true;
-            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(819, 225);
+            this.LogisticaCboNumeroGuia.Location = new System.Drawing.Point(614, 183);
+            this.LogisticaCboNumeroGuia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaCboNumeroGuia.Name = "LogisticaCboNumeroGuia";
-            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(233, 24);
+            this.LogisticaCboNumeroGuia.Size = new System.Drawing.Size(176, 21);
             this.LogisticaCboNumeroGuia.TabIndex = 31;
             // 
             // LogisticaPnlCostosServicio
@@ -167,11 +176,11 @@
             this.LogisticaPnlCostosServicio.Controls.Add(this.LogisticaPnlEncabezadoCostosServicio);
             this.LogisticaPnlCostosServicio.Controls.Add(this.LogisticaLblMoneda);
             this.LogisticaPnlCostosServicio.Controls.Add(this.LogisticaLblTarifa);
-            this.LogisticaPnlCostosServicio.Location = new System.Drawing.Point(54, 254);
-            this.LogisticaPnlCostosServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlCostosServicio.Location = new System.Drawing.Point(40, 206);
+            this.LogisticaPnlCostosServicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaPnlCostosServicio.Name = "LogisticaPnlCostosServicio";
-            this.LogisticaPnlCostosServicio.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaPnlCostosServicio.Size = new System.Drawing.Size(998, 177);
+            this.LogisticaPnlCostosServicio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaPnlCostosServicio.Size = new System.Drawing.Size(748, 144);
             this.LogisticaPnlCostosServicio.TabIndex = 23;
             this.LogisticaPnlCostosServicio.TabStop = false;
             // 
@@ -181,19 +190,20 @@
             this.LogisticaCboTipoPago.Items.AddRange(new object[] {
             "Transferencia",
             "Efectivo"});
-            this.LogisticaCboTipoPago.Location = new System.Drawing.Point(399, 118);
-            this.LogisticaCboTipoPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaCboTipoPago.Location = new System.Drawing.Point(299, 96);
+            this.LogisticaCboTipoPago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaCboTipoPago.Name = "LogisticaCboTipoPago";
-            this.LogisticaCboTipoPago.Size = new System.Drawing.Size(178, 24);
+            this.LogisticaCboTipoPago.Size = new System.Drawing.Size(134, 21);
             this.LogisticaCboTipoPago.TabIndex = 24;
             // 
             // LogisticaLblTipoPago
             // 
             this.LogisticaLblTipoPago.AutoSize = true;
             this.LogisticaLblTipoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblTipoPago.Location = new System.Drawing.Point(396, 99);
+            this.LogisticaLblTipoPago.Location = new System.Drawing.Point(297, 80);
+            this.LogisticaLblTipoPago.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblTipoPago.Name = "LogisticaLblTipoPago";
-            this.LogisticaLblTipoPago.Size = new System.Drawing.Size(81, 17);
+            this.LogisticaLblTipoPago.Size = new System.Drawing.Size(62, 13);
             this.LogisticaLblTipoPago.TabIndex = 23;
             this.LogisticaLblTipoPago.Text = "Tipo Pago: ";
             // 
@@ -203,19 +213,20 @@
             this.LogisticaCboMoneda.Items.AddRange(new object[] {
             "GTQ - QUETZALES",
             "USD - DOLARES"});
-            this.LogisticaCboMoneda.Location = new System.Drawing.Point(19, 118);
-            this.LogisticaCboMoneda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaCboMoneda.Location = new System.Drawing.Point(14, 96);
+            this.LogisticaCboMoneda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaCboMoneda.Name = "LogisticaCboMoneda";
-            this.LogisticaCboMoneda.Size = new System.Drawing.Size(178, 24);
+            this.LogisticaCboMoneda.Size = new System.Drawing.Size(134, 21);
             this.LogisticaCboMoneda.TabIndex = 20;
             // 
             // label1LogisticaLblMoneda
             // 
             this.label1LogisticaLblMoneda.AutoSize = true;
             this.label1LogisticaLblMoneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label1LogisticaLblMoneda.Location = new System.Drawing.Point(16, 99);
+            this.label1LogisticaLblMoneda.Location = new System.Drawing.Point(12, 80);
+            this.label1LogisticaLblMoneda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1LogisticaLblMoneda.Name = "label1LogisticaLblMoneda";
-            this.label1LogisticaLblMoneda.Size = new System.Drawing.Size(67, 17);
+            this.label1LogisticaLblMoneda.Size = new System.Drawing.Size(52, 13);
             this.label1LogisticaLblMoneda.TabIndex = 22;
             this.label1LogisticaLblMoneda.Text = "Moneda: ";
             // 
@@ -223,19 +234,20 @@
             // 
             this.LogisticaTxtCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaTxtCantidad.Location = new System.Drawing.Point(399, 68);
-            this.LogisticaTxtCantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaTxtCantidad.Location = new System.Drawing.Point(299, 55);
+            this.LogisticaTxtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaTxtCantidad.Name = "LogisticaTxtCantidad";
-            this.LogisticaTxtCantidad.Size = new System.Drawing.Size(178, 23);
+            this.LogisticaTxtCantidad.Size = new System.Drawing.Size(134, 20);
             this.LogisticaTxtCantidad.TabIndex = 21;
             // 
             // LogisticaLblCantidad
             // 
             this.LogisticaLblCantidad.AutoSize = true;
             this.LogisticaLblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblCantidad.Location = new System.Drawing.Point(396, 47);
+            this.LogisticaLblCantidad.Location = new System.Drawing.Point(297, 38);
+            this.LogisticaLblCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblCantidad.Name = "LogisticaLblCantidad";
-            this.LogisticaLblCantidad.Size = new System.Drawing.Size(216, 17);
+            this.LogisticaLblCantidad.Size = new System.Drawing.Size(162, 13);
             this.LogisticaLblCantidad.TabIndex = 20;
             this.LogisticaLblCantidad.Text = "Cantidad (km, viajes o distancia):";
             // 
@@ -243,10 +255,10 @@
             // 
             this.LogisticaTxtCosto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaTxtCosto.Location = new System.Drawing.Point(767, 67);
-            this.LogisticaTxtCosto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaTxtCosto.Location = new System.Drawing.Point(575, 54);
+            this.LogisticaTxtCosto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaTxtCosto.Name = "LogisticaTxtCosto";
-            this.LogisticaTxtCosto.Size = new System.Drawing.Size(178, 23);
+            this.LogisticaTxtCosto.Size = new System.Drawing.Size(134, 20);
             this.LogisticaTxtCosto.TabIndex = 19;
             // 
             // LogisticaCboTarifa
@@ -256,20 +268,20 @@
             "Por carga",
             "Por viaje",
             "Por distancia"});
-            this.LogisticaCboTarifa.Location = new System.Drawing.Point(19, 67);
-            this.LogisticaCboTarifa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaCboTarifa.Location = new System.Drawing.Point(14, 54);
+            this.LogisticaCboTarifa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaCboTarifa.Name = "LogisticaCboTarifa";
-            this.LogisticaCboTarifa.Size = new System.Drawing.Size(178, 24);
+            this.LogisticaCboTarifa.Size = new System.Drawing.Size(134, 21);
             this.LogisticaCboTarifa.TabIndex = 19;
             // 
             // LogisticaPnlEncabezadoCostosServicio
             // 
             this.LogisticaPnlEncabezadoCostosServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlEncabezadoCostosServicio.Controls.Add(this.LogisticaLblTituloCostoServicio);
-            this.LogisticaPnlEncabezadoCostosServicio.Location = new System.Drawing.Point(0, 9);
-            this.LogisticaPnlEncabezadoCostosServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlEncabezadoCostosServicio.Location = new System.Drawing.Point(0, 7);
+            this.LogisticaPnlEncabezadoCostosServicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaPnlEncabezadoCostosServicio.Name = "LogisticaPnlEncabezadoCostosServicio";
-            this.LogisticaPnlEncabezadoCostosServicio.Size = new System.Drawing.Size(998, 36);
+            this.LogisticaPnlEncabezadoCostosServicio.Size = new System.Drawing.Size(748, 29);
             this.LogisticaPnlEncabezadoCostosServicio.TabIndex = 18;
             // 
             // LogisticaLblTituloCostoServicio
@@ -277,9 +289,10 @@
             this.LogisticaLblTituloCostoServicio.AutoSize = true;
             this.LogisticaLblTituloCostoServicio.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloCostoServicio.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloCostoServicio.Location = new System.Drawing.Point(63, 4);
+            this.LogisticaLblTituloCostoServicio.Location = new System.Drawing.Point(47, 3);
+            this.LogisticaLblTituloCostoServicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblTituloCostoServicio.Name = "LogisticaLblTituloCostoServicio";
-            this.LogisticaLblTituloCostoServicio.Size = new System.Drawing.Size(182, 27);
+            this.LogisticaLblTituloCostoServicio.Size = new System.Drawing.Size(148, 22);
             this.LogisticaLblTituloCostoServicio.TabIndex = 9;
             this.LogisticaLblTituloCostoServicio.Text = "Costo del servicio";
             // 
@@ -287,9 +300,10 @@
             // 
             this.LogisticaLblMoneda.AutoSize = true;
             this.LogisticaLblMoneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblMoneda.Location = new System.Drawing.Point(764, 49);
+            this.LogisticaLblMoneda.Location = new System.Drawing.Point(573, 40);
+            this.LogisticaLblMoneda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblMoneda.Name = "LogisticaLblMoneda";
-            this.LogisticaLblMoneda.Size = new System.Drawing.Size(52, 17);
+            this.LogisticaLblMoneda.Size = new System.Drawing.Size(40, 13);
             this.LogisticaLblMoneda.TabIndex = 16;
             this.LogisticaLblMoneda.Text = "Costo: ";
             // 
@@ -297,23 +311,26 @@
             // 
             this.LogisticaLblTarifa.AutoSize = true;
             this.LogisticaLblTarifa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LogisticaLblTarifa.Location = new System.Drawing.Point(16, 47);
+            this.LogisticaLblTarifa.Location = new System.Drawing.Point(12, 38);
+            this.LogisticaLblTarifa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblTarifa.Name = "LogisticaLblTarifa";
-            this.LogisticaLblTarifa.Size = new System.Drawing.Size(49, 17);
+            this.LogisticaLblTarifa.Size = new System.Drawing.Size(37, 13);
             this.LogisticaLblTarifa.TabIndex = 0;
             this.LogisticaLblTarifa.Text = "Tarifa:";
             // 
             // FrmCostosYPagosDelServicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1105, 635);
+            this.ClientSize = new System.Drawing.Size(829, 516);
             this.Controls.Add(this.LogisticaPnlCostoYPagosDelServicio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmCostosYPagosDelServicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "5023 - CostosYPagosDelServicio";
             this.LogisticaPnlCostoYPagosDelServicio.ResumeLayout(false);
             this.LogisticaPnlCostoYPagosDelServicio.PerformLayout();

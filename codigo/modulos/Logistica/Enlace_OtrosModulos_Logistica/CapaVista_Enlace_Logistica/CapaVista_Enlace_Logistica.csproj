@@ -77,5 +77,11 @@
   <ItemGroup>
     <None Include="Resources\btn_ayuda.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
