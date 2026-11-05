@@ -295,7 +295,7 @@
             this.LogisticaLblPesoProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblPesoProducto.Location = new System.Drawing.Point(686, 315);
             this.LogisticaLblPesoProducto.Name = "LogisticaLblPesoProducto";
-            this.LogisticaLblPesoProducto.Size = new System.Drawing.Size(52, 21);
+            this.LogisticaLblPesoProducto.Size = new System.Drawing.Size(51, 21);
             this.LogisticaLblPesoProducto.TabIndex = 16;
             this.LogisticaLblPesoProducto.Text = "Peso:";
             // 
@@ -306,7 +306,7 @@
             this.LogisticaLblStockMaximo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblStockMaximo.Location = new System.Drawing.Point(686, 255);
             this.LogisticaLblStockMaximo.Name = "LogisticaLblStockMaximo";
-            this.LogisticaLblStockMaximo.Size = new System.Drawing.Size(115, 21);
+            this.LogisticaLblStockMaximo.Size = new System.Drawing.Size(118, 21);
             this.LogisticaLblStockMaximo.TabIndex = 15;
             this.LogisticaLblStockMaximo.Text = "Stock Máximo:";
             // 
@@ -317,7 +317,7 @@
             this.LogisticaLblStockMinimo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblStockMinimo.Location = new System.Drawing.Point(686, 195);
             this.LogisticaLblStockMinimo.Name = "LogisticaLblStockMinimo";
-            this.LogisticaLblStockMinimo.Size = new System.Drawing.Size(110, 21);
+            this.LogisticaLblStockMinimo.Size = new System.Drawing.Size(114, 21);
             this.LogisticaLblStockMinimo.TabIndex = 14;
             this.LogisticaLblStockMinimo.Text = "Stock Mínimo:";
             // 
@@ -328,7 +328,7 @@
             this.LogisticaLblPorcentajeComision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblPorcentajeComision.Location = new System.Drawing.Point(356, 317);
             this.LogisticaLblPorcentajeComision.Name = "LogisticaLblPorcentajeComision";
-            this.LogisticaLblPorcentajeComision.Size = new System.Drawing.Size(90, 21);
+            this.LogisticaLblPorcentajeComision.Size = new System.Drawing.Size(105, 21);
             this.LogisticaLblPorcentajeComision.TabIndex = 13;
             this.LogisticaLblPorcentajeComision.Text = "Comisión %:";
             // 
@@ -383,7 +383,7 @@
             this.LogisticaLblDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblDescripcion.Location = new System.Drawing.Point(20, 302);
             this.LogisticaLblDescripcion.Name = "LogisticaLblDescripcion";
-            this.LogisticaLblDescripcion.Size = new System.Drawing.Size(103, 21);
+            this.LogisticaLblDescripcion.Size = new System.Drawing.Size(102, 21);
             this.LogisticaLblDescripcion.TabIndex = 8;
             this.LogisticaLblDescripcion.Text = "Descripción:";
             // 
@@ -405,7 +405,7 @@
             this.LogisticaLblCategoriaProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblCategoriaProducto.Location = new System.Drawing.Point(356, 195);
             this.LogisticaLblCategoriaProducto.Name = "LogisticaLblCategoriaProducto";
-            this.LogisticaLblCategoriaProducto.Size = new System.Drawing.Size(88, 21);
+            this.LogisticaLblCategoriaProducto.Size = new System.Drawing.Size(87, 21);
             this.LogisticaLblCategoriaProducto.TabIndex = 6;
             this.LogisticaLblCategoriaProducto.Text = "Categoría:";
             // 
@@ -449,7 +449,7 @@
             this.LogisticaLblClasificacionProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblClasificacionProducto.Location = new System.Drawing.Point(20, 251);
             this.LogisticaLblClasificacionProducto.Name = "LogisticaLblClasificacionProducto";
-            this.LogisticaLblClasificacionProducto.Size = new System.Drawing.Size(111, 21);
+            this.LogisticaLblClasificacionProducto.Size = new System.Drawing.Size(107, 21);
             this.LogisticaLblClasificacionProducto.TabIndex = 2;
             this.LogisticaLblClasificacionProducto.Text = "Clasificación:";
             // 
@@ -536,7 +536,8 @@
             this.LogisticaLblDescripcionProducto.Name = "LogisticaLblDescripcionProducto";
             this.LogisticaLblDescripcionProducto.Size = new System.Drawing.Size(435, 42);
             this.LogisticaLblDescripcionProducto.TabIndex = 1;
-            this.LogisticaLblDescripcionProducto.Text = "Administra el catálogo de productos, sus características, \r\nprecios y clasificación comercial.";
+            this.LogisticaLblDescripcionProducto.Text = "Administra el catálogo de productos, sus características, \r\nprecios y clasificaci" +
+    "ón comercial.";
             // 
             // LogisticaLblTituloProducto
             // 
@@ -557,8 +558,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1370, 741);
             this.Controls.Add(this.LogisticaPnlProducto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMantenimientoProducto";
-            this.Text = "FrmMantenimientoProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "5006 - Productos";
             this.LogisticaPnlProducto.ResumeLayout(false);
             this.LogisticaPnlProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
