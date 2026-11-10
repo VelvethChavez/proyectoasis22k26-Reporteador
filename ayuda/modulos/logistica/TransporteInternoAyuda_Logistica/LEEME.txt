@@ -1,8 +1,0 @@
-MANUAL DE AYUDAS - EMBUTIDOS DE CALIDAD, S. A.
-
-Incluye: 5013 Transporte Interno, 5016 Conductores, 5028 Cámaras de Refrigeración, 5015 Tipos de Transporte.
-
-Abra FrmTipoTransporte_Logistica.htm en un navegador para visualizar la nueva ayuda.
-Para generar un CHM integrado, abra LogisticaAyudas.hhp en Microsoft HTML Help Workshop y ejecute Compile.
-No mueva el directorio Imagenes, pues contiene la portada original y las capturas de los cuatro manuales.
-Nota: la captura de eliminación de Tipo de Transporte corresponde a la confirmación previa, no al resultado final.
