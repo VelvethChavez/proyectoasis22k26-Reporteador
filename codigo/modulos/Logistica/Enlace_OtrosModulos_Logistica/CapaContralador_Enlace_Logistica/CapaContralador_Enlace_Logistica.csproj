@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador_PolizasCuentas_Contabilidad">
+      <HintPath>..\..\..\contabilidad\Bibliotecas de Contabilidad\PolizasCuentas_Contabilidad\CapaControlador_PolizasCuentas_Contabilidad\bin\Debug\CapaControlador_PolizasCuentas_Contabilidad.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsIntegracionContabilidadControlador.cs" />
     <Compile Include="ClsSolicitudPagoControlador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

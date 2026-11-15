@@ -18,7 +18,19 @@ namespace PruebasUnitarias_Enlace_Logistica.PruebasControlador
 
         private class RepositorioSimulado :
             ClsIRepositorioSolicitudPago
+
         {
+
+
+            public string GenerarSolicitudPago(int idServicio)
+            {
+                if (idServicio <= 0)
+                    throw new ArgumentException(
+                        "El servicio no es válido.");
+
+                return "SP-TEST-0001";
+            }
+
             public IEnumerable<ClsServicioTransporte> Servicios
             { get; set; }
 

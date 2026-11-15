@@ -27,6 +27,14 @@ namespace PruebasUnitarias_Enlace_Logistica.PruebasVista
                 NumeroConsultas++;
                 return Servicios;
             }
+            public string GenerarSolicitudPago(int idServicio)
+            {
+                if (idServicio <= 0)
+                    throw new ArgumentException(
+                        "El servicio no es válido.");
+
+                return "SP-TEST-0001";
+            }
         }
 
         private static void EjecutarEnSTA(Action accion)
