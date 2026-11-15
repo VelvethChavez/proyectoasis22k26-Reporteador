@@ -201,6 +201,7 @@
             this.LogisticaBtnGenerarSolicitud.TabIndex = 9;
             this.LogisticaBtnGenerarSolicitud.Text = "Generar Solicitud";
             this.LogisticaBtnGenerarSolicitud.UseVisualStyleBackColor = false;
+            this.LogisticaBtnGenerarSolicitud.Click += new System.EventHandler(this.LogisticaBtnGenerarSolicitud_Click);
             // 
             // LogisticaPnlResumenSolicitud
             // 

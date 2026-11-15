@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -762,7 +761,8 @@ namespace CapaVista_Enlace_Logistica.Formas
         private void btnSeleccionarDocumentos_Click(
             object sender, EventArgs e)
         {
-            // Pendiente de implementar documentos opcionales.
+            FrmPolizasLogistica frm = new FrmPolizasLogistica();
+            frm.ShowDialog();
         }
 
         private void lblDocumentosRespaldo_Click(
@@ -829,5 +829,123 @@ namespace CapaVista_Enlace_Logistica.Formas
         {
             LogisticaMetMostrarAyuda();
         }
+
+
+        private void LogisticaBtnGenerarSolicitud_Click(
+            object sender,
+            EventArgs e)
+        {
+            ClsServicioTransporte servicio =
+                LogisticaCboServicioTransporte.SelectedItem
+                    as ClsServicioTransporte;
+
+            if (servicio == null)
+            {
+                MessageBox.Show(
+                    "Seleccione un servicio de transporte.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (servicio.IdServicio <= 0)
+            {
+                MessageBox.Show(
+                    "El servicio seleccionado no es válido.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            decimal monto;
+
+            if (!ObtenerDecimalVistaPrevia(
+                LogisticaTxtMontoPagar.Text, out monto) ||
+                monto <= 0)
+            {
+                MessageBox.Show(
+                    "Ingrese un monto válido mayor que cero.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(
+                LogisticaTxtConceptoPago.Text))
+            {
+                MessageBox.Show(
+                    "Ingrese el concepto del pago.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (LogisticaCboBancoBeneficiario.SelectedIndex < 0 ||
+                LogisticaCboTipoCuenta.SelectedIndex < 0 ||
+                string.IsNullOrWhiteSpace(
+                    LogisticaTxtNumeroCuenta.Text))
+            {
+                MessageBox.Show(
+                    "Complete los datos bancarios del beneficiario.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirmacion = MessageBox.Show(
+                "¿Desea generar la solicitud de pago?\n\n" +
+                "Servicio: " + servicio.IdServicio + "\n" +
+                "Transportista: " +
+                    servicio.NombreTransportista + "\n" +
+                "Monto: " + monto.ToString("N2") + " " +
+                    (LogisticaRdoDolares.Checked ? "USD" : "GTQ"),
+                "Confirmar solicitud",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (confirmacion != DialogResult.Yes)
+                return;
+
+            try
+            {
+                LogisticaBtnGenerarSolicitud.Enabled = false;
+
+                // Este método debe implementarse en el controlador
+                // y conectarse al procedimiento almacenado real.
+                string codigoSolicitud =
+                    controladorSolicitudPago.GenerarSolicitudPago(
+                        servicio.IdServicio);
+
+                MessageBox.Show(
+                    "Solicitud generada correctamente.\n\n" +
+                    "Código: " + codigoSolicitud + "\n\n" +
+                    "La solicitud quedó disponible para Bancos.",
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                LimpiarFormulario();
+                CargarServiciosTransporte();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "No fue posible generar la solicitud.\n\n" +
+                    ex.Message,
+                    "Solicitud de Pago",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            finally
+            {
+                LogisticaBtnGenerarSolicitud.Enabled = true;
+            }
+        }
+
     }
 }
